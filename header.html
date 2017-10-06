@@ -1,0 +1,53 @@
+
+<link rel="stylesheet" href="../CSS/estilos.css">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<header>
+	<div class="headercontainer">
+		<div class="header_main">
+			<img class="logo" src="Imagenes/logo.png" >
+			<img class="iconomenumobile" src="Imagenes/iconomenumobile.png" onclick="openNav(this)">
+			<div class="topnav" id="myTopnav">
+  			<a href="#home">INICIO</a>
+  			<a href="#news">QUIENES SOMOS</a>
+ 			<a href="#contact">FAQs</a>
+ 			<a href="#about">AYUDA</a>
+ 			<a href="#abou">INGRESAR</a>
+		</div>
+
+		</div>
+		<nav class="panel">
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#">Inicio</a>
+			  <a href="#">Quienes Somos</a>
+			  <a href="#">FAQs</a>
+			  <a href="#">Ayuda</a>
+			  <a href="#">Ingresar</a>
+
+			</div>
+
+		</nav>
+
+
+	</div>
+	<script>
+		var hamburgerView;
+		function openNav(x) {
+			hamburgerView = x;
+		    x.classList.toggle("change");
+		    document.getElementById("mySidenav").style.width = "250px";
+    		document.getElementById("main").style.marginLeft = "250px";
+    		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+		}
+
+		function closeNav() {
+			hamburgerView.classList.toggle("change");
+    		document.getElementById("mySidenav").style.width = "0";
+   		 	document.getElementById("main").style.marginLeft = "0";
+   		 	document.body.style.backgroundColor = "white";
+		}
+	</script>
+</header>
