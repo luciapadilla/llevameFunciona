@@ -1,5 +1,20 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=llevame_db", $username, $password);
+    }
+catch(PDOException $e)
+    { 
+    echo "Connection failed: " . $e->getMessage();
+    }
+
 session_start();
+
+
 
 if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
   loguear($_COOKIE["usuarioLogueado"]);
@@ -55,32 +70,35 @@ function createUser($data) {
 }
 
 function saveUser($usuario) {
-  $usuarioJSON = json_encode($usuario);
-  file_put_contents("usuarios.json", $usuarioJSON . PHP_EOL, FILE_APPEND);
+  global $conn;
+  $nombre = $usuario["username"];
+  $email = $usuario["email"];
+  $password = $usuario["password"];
+
+  $query = $conn->exec("INSERT INTO users(username,email,password) VALUES('$nombre','$email','$password');");
 }
 
 function traerTodos() {
-  $archivo = file_get_contents("usuarios.json");
-  $array = explode(PHP_EOL, $archivo);
-  array_pop($array);
+  global $conn;
 
-  $arrayFinal = [];
-  foreach ($array as $usuario) {
-    $arrayFinal[] = json_decode($usuario, true);
-  }
+  $query = $conn->prepare("SELECT * FROM users");
+  $query->execute();
 
-  return $arrayFinal;
+  $resultado = $query->fetchall(PDO::FETCH_ASSOC);
+
+  return $resultado;
 }
 
 
 function traerPorEmail($email) {
-  $todos = traerTodos();
+  global $conn;
 
-  foreach ($todos as $usuario) {
-    if ($usuario["email"] == $email) {
-      return $usuario;
-    }
-  }
+  $query = $conn->prepare("SELECT * FROM users WHERE email = '$email'");
+  $query->execute();
+
+  $resultado = $query->fetch(PDO::FETCH_ASSOC);
+
+  return $resultado;
 }
 function validarLogin($informacion) {
   $arrayDeErrores = [];
@@ -96,6 +114,13 @@ function validarLogin($informacion) {
   } else {
     //Validar la contraseña
     $usuario = traerPorEmail($informacion["email"]);
+    // if (count($usuario) == 1) {
+    //   $usuario = $usuario[0];
+    // }
+    // var_dump($informacion);
+
+    // echo "<pre>";
+    // var_dump($usuario);
     if (password_verify($informacion["password"], $usuario["password"]) == false) {
       $arrayDeErrores["password"] = "La contraseña no verifica";
     }

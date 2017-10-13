@@ -1,7 +1,7 @@
 <?php
  require_once("funciones.php");
 if (estaLogueado()) {
-  header("Location:home.php");
+  header("Location:home.php");exit();
 }
 
 $arrayErrores = [];
@@ -13,34 +13,23 @@ if (isset($_POST["Submit"])) {
   $arrayErrores = validarInformacion($_POST);
 
   if (count($arrayErrores) == 0) {
-
     $usuario = createUser($_POST);
+    saveUser($usuario);
+  }
+  $archivo = $_FILES["foto-perfil"]["tmp_name"];
 
+  $nombreDeLaFoto = $_FILES["foto-perfil"]["name"];
+  $extension = pathinfo($nombreDeLaFoto, PATHINFO_EXTENSION);
 
-    $usuarios = traerTodos();
-    foreach ($usuarios as $unUser) {
-      if($unUser["email"] == $usuario["email"]){
-        echo "ya estas en nuestra base";
-        break;
-      }else{
-        saveUser($usuario);
-      }
-    }
-    $archivo = $_FILES["foto-perfil"]["tmp_name"];
+  $nombre = dirname(__FILE__) . "/subidos/" . $_POST["email"] . ".$extension";
 
-    $nombreDeLaFoto = $_FILES["foto-perfil"]["name"];
-    $extension = pathinfo($nombreDeLaFoto, PATHINFO_EXTENSION);
-
-    $nombre = dirname(__FILE__) . "/subidos/" . $_POST["email"] . ".$extension";
-
-    move_uploaded_file($archivo, $nombre);
-    if(file_exists($nombre)){
-        header("Location:login.php");exit();
-    }
+  move_uploaded_file($archivo, $nombre);
+  if(file_exists($nombre)){
+    header("Location:login.php");exit();
   }
 }
 if(isset($_POST["LogIn"])){
-        header("Location:login.php");exit();
+  header("Location:login.php");exit();
 }
 
 

@@ -31,7 +31,7 @@ if ($_POST) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log In</title>
+  <title>Log In</title>
   <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
   <style type="text/css">
     input::placeholder {
