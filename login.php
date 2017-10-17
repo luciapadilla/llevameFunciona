@@ -31,7 +31,7 @@ if ($_POST) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Log In</title>
+	<title>Log In</title>
   <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
   <style type="text/css">
     input::placeholder {
@@ -54,9 +54,10 @@ if ($_POST) {
        <input class="input" type="password" name="password" placeholder ="Contraseña" >
        <br><br>
         <input class="boton-ingresar" type="submit" value="INGRESAR"> <br><br>
-       <label class="recuerdame">Recuérdame</label>
-       <input class="input-checkbox" type="checkbox" name="recordame" value="">
-       <br>
+        <div class="div-recuerdame">
+        <label class="recuerdame">Recuérdame<input class="input-checkbox" type="checkbox" name="recordame" value=""></label>
+
+      </div>
        <p><a href="register.php" target="new">Crear cuenta</a></p>
      </form>
     </div>

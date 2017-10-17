@@ -12,7 +12,7 @@
 </head>
 <body>
   <?php  require_once("header.php");?>
-   <div class="help-container">
+   <div id= "ayuda" class="help-container">
      <div class="tit-ayuda">
        <h1 class="h1-ayuda">AYUDA</h1>
        <h2 class="h2-ayuda">¿COMO FUNCIONA?</h2>

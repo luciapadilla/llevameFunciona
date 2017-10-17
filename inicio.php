@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php  require_once("header.php");?>
-<div class="inicio">
+<div id= "inicio" class="inicio">
 	<div class="inicio1">
 		<img class="mobile1" src="../imagenes/mobileinicio1.jpg" alt="">
 		<img class="tablet1" src="../imagenes/tablet1.jpg" alt="">

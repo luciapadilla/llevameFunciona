@@ -9,10 +9,10 @@
 			<img class="logo" src="imagenes/logoblanco.png" >
 			<img class="iconomenumobile" src="imagenes/iconomenumobile.png" onclick="openNav(this)">
 			<div class="topnav" id="myTopnav">
-  			<a href="index.php">INICIO</a>
-  			<a href="index.php">QUIENES SOMOS</a>
- 			<a href="index.php">FAQs</a>
- 			<a href="index.php">AYUDA</a>
+  			<a href="#inicio">INICIO</a>
+  			<a href="#quienes">QUIENES SOMOS</a>
+ 			<a href="#faqs">FAQs</a>
+ 			<a href="#ayuda">AYUDA</a>
  			<a href="login.php">INGRESAR</a>
 		</div>
 
@@ -20,10 +20,10 @@
 		<nav class="panel">
 			<div id="mySidenav" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="index.php">Inicio</a>
-			  <a href="index.php">Quienes Somos</a>
-			  <a href="index.php">FAQs</a>
-			  <a href="index.php">Ayuda</a>
+			  <a href="#inicio">Inicio</a>
+			  <a href="#quienes">Quienes Somos</a>
+			  <a href="#faqs">FAQs</a>
+			  <a href="#ayuda">Ayuda</a>
 			  <a href="login.php">Ingresar</a>
 
 			</div>

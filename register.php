@@ -1,7 +1,7 @@
 <?php
  require_once("funciones.php");
 if (estaLogueado()) {
-  header("Location:home.php");exit();
+  header("Location:home.php");
 }
 
 $arrayErrores = [];
@@ -13,23 +13,34 @@ if (isset($_POST["Submit"])) {
   $arrayErrores = validarInformacion($_POST);
 
   if (count($arrayErrores) == 0) {
+
     $usuario = createUser($_POST);
-    saveUser($usuario);
-  }
-  $archivo = $_FILES["foto-perfil"]["tmp_name"];
 
-  $nombreDeLaFoto = $_FILES["foto-perfil"]["name"];
-  $extension = pathinfo($nombreDeLaFoto, PATHINFO_EXTENSION);
 
-  $nombre = dirname(__FILE__) . "/subidos/" . $_POST["email"] . ".$extension";
+    $usuarios = traerTodos();
+    foreach ($usuarios as $unUser) {
+      if($unUser["email"] == $usuario["email"]){
+        echo "ya estas en nuestra base";
+        break;
+      }else{
+        saveUser($usuario);
+      }
+    }
+    $archivo = $_FILES["foto-perfil"]["tmp_name"];
 
-  move_uploaded_file($archivo, $nombre);
-  if(file_exists($nombre)){
-    header("Location:login.php");exit();
+    $nombreDeLaFoto = $_FILES["foto-perfil"]["name"];
+    $extension = pathinfo($nombreDeLaFoto, PATHINFO_EXTENSION);
+
+    $nombre = dirname(__FILE__) . "/subidos/" . $_POST["email"] . ".$extension";
+
+    move_uploaded_file($archivo, $nombre);
+    if(file_exists($nombre)){
+        header("Location:login.php");exit();
+    }
   }
 }
 if(isset($_POST["LogIn"])){
-  header("Location:login.php");exit();
+        header("Location:login.php");exit();
 }
 
 
@@ -61,20 +72,12 @@ if($_POST){
       <?php if(isset($arrayErrores['username'])){?>
                 <label style="color: red"><?= $arrayErrores["username"]."<br>" ?></label>
       <?php } ?>
-      <input class="input-cuenta" type="text" name="username" placeholder="Username" value="<? echo $username ?>"><br>
-
-
-      <label style="color:black" for="">Foto de Perfil</label>
-      <?php if(isset($arrayErrores['foto-perfil'])){?>
-                <label style="color: red"><?= $arrayErrores["foto-perfil"]."<br>" ?></label>
-      <?php } ?>
-                  <input class="form-control" type="file" name="foto-perfil"><br>
-
+      <input class="input-cuenta" type="text" name="username" placeholder="Username" value="<?= $username ?>"><br>
 
       <?php if(isset($arrayErrores['email'])){?>
                 <label style="color: red"><?= $arrayErrores["email"]."<br>" ?></label>
       <?php } ?>
-      <input class="input-cuenta" type="text" name="email" placeholder="Email" value="<? echo $mail ?>"><br>
+      <input class="input-cuenta" type="text" name="email" placeholder="Email" value="<?= $mail ?>"><br>
 
       <?php if(isset($arrayErrores['password'])){?>
                 <label style="color: red"><?= $arrayErrores["password"]."<br>"?></label>
@@ -85,16 +88,23 @@ if($_POST){
       <?php if(isset($arrayErrores['cpassword'])){?>
                 <label style="color: red"><?= $arrayErrores["cpassword"]."<br>"?></label>
       <?php } ?>
-      <input class="input-cuenta"t type="password" name="cpassword" placeholder="Confirmar Contraseña" value=""><br>
+      <input class="input-cuenta"t type="password" name="cpassword" placeholder="Confirmar Contraseña" value="">
       <br>
-
-
-      <label class="termino-condiciones">Acepto terminos y condiciones</label>
+     <div class="">
+      <label class="foto-perfil" for="">Foto de Perfil <br>
+      <?php if(isset($arrayErrores['foto-perfil'])){?>
+                <label style="color: red"><?= $arrayErrores["foto-perfil"]."<br>" ?></label>
+      <?php } ?>
+                  <input class="form-control" type="file" name="foto-perfil"><br><br>
+     </label>
+     </div>
+     <div class="">
+      <label class="termino-condiciones">Acepto terminos y condiciones<input class="input-checkbox-cuenta" type="checkbox" name="acceptterm"></label>
       <?php if(isset($arrayErrores['acceptterm'])){?>
                 <label style="color: red"><?= $arrayErrores["acceptterm"]."<br>"?></label>
       <?php } ?>
-      <input class="input-checkbox-cuenta" type="checkbox" name="acceptterm">
-      <br><br>
+
+      </div>
       <input class="boton-ingresar-cuenta" type="submit" name="Submit" value="CREAR CUENTA">
       <br><br>
 
