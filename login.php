@@ -1,8 +1,8 @@
 <?php
 
-require_once("funciones.php");
+include 'importClasses.php';
 
-if (estaLogueado()) {
+if ($session->estaLogueado()) {
   header("Location:home.php");
 }
 
@@ -10,15 +10,15 @@ $mail = "";
 
 $arrayErrores = [];
 if ($_POST) {
-
   //Validar
-  $arrayErrores = validarLogin($_POST);
+
+  $arrayErrores = $validator->validarLogin($_POST);
 
   //Si es valido, loguear
   if (count($arrayErrores) == 0) {
-    loguear($_POST["email"]);
+    $session->loguear($_POST["email"]);
     if (isset($_POST["recordame"])) {
-      recordarUsuario($_POST["email"]);
+      $session->recordarUsuario($_POST["email"]);
     }
     header("Location:home.php");exit;
   }else{

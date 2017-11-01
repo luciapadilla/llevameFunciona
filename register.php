@@ -1,6 +1,7 @@
 <?php
- require_once("funciones.php");
-if (estaLogueado()) {
+include 'importClasses.php';
+
+if ($session->estaLogueado()) {
   header("Location:home.php");exit();
 }
 
@@ -8,20 +9,24 @@ $arrayErrores = [];
 
 $mail = "";
 $username = "";
+
 // Si vino por POST
 if (isset($_POST["Submit"])) {
-  $arrayErrores = validarInformacion($_POST);
+  $arrayErrores = $validator->validarInformacion($_POST);
 
   if (count($arrayErrores) == 0) {
-    $usuario = createUser($_POST);
-    saveUser($usuario);
+
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    $usuario = new User($_POST['username'],$_POST['email'],$password);
+    $db->saveUser($usuario);
   }
   $archivo = $_FILES["foto-perfil"]["tmp_name"];
 
   $nombreDeLaFoto = $_FILES["foto-perfil"]["name"];
   $extension = pathinfo($nombreDeLaFoto, PATHINFO_EXTENSION);
 
-  $nombre = dirname(__FILE__) . "/subidos/" . $_POST["email"] . ".$extension";
+  $nombre = dirname(__FILE__) . "/Imagenes/" . $_POST["email"] . ".$extension";
 
   move_uploaded_file($archivo, $nombre);
   if(file_exists($nombre)){

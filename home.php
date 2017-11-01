@@ -1,9 +1,9 @@
 <?php
-require_once("funciones.php");
+include 'importClasses.php';
 
 
 if($_POST){
-	signOut();
+	$session->signOut();
 	header("Location:login.php");exit;
 }
 ?>
@@ -14,8 +14,8 @@ if($_POST){
 </head>
 <body>
 	<div class="jumbotron">
- 	 <?php if (estaLogueado()) : ?>
-    <h1>Bienvenido <?=usuarioLogueado()["username"]."!!" ?></h1>
+ 	 <?php if ($session->estaLogueado()) : ?>
+    <h1>Bienvenido <?= $session->usuarioLogueado()->getName()."!!" ?></h1>
     <form action="home.php" method="post">
 		<button type="submit" name="sarasa">Cerrar Sesion</button>
 	</form>
