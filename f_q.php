@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php  require_once("header.php");?>
-  <div class="preg-container">
+  <div id= "faqs" class="preg-container">
     <h1 class="h1-faqs">FAQs</h1>
 
    <div class="preg1-2">

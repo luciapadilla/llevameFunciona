@@ -10,7 +10,7 @@
   </head>
   <body>
       <?php  require_once("header.php");?>
-    <div class="contenedor-quienes">
+    <div id= "quienes" class="contenedor-quienes">
     <section class="titulo-quienes">
       <article>
         <h2>¿TE LLEVO?</h2>

@@ -21,10 +21,10 @@
 	</div>
 	<div class="menu-footer">
 		<ul >
-			<li><p>Home</p></li>
-			<li><p>Quienes Somos</p></li>
-			<li><p>FAQs</p></li>
-			<li><p>Ayuda</p></li>
+			<li><a href="#inicio"><p>Home</p></a></li>
+			<li><a href="#quienes"><p>Quienes Somos</p></a></li>
+			<li><a href="#faqs"><p>FAQs</p></a></li>
+			<li><a href="#ayuda"><p>Ayuda</p></a></li>
 		</ul>
 	</div>
 	<div class="logo-footer">
