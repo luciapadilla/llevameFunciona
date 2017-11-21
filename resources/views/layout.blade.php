@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<header>
+		<div class="headercontainer">
+			<div class="header_main">
+				<img class="logo" src="imagenes/logoblanco.png" >
+				<img class="iconomenumobile" src="imagenes/iconomenumobile.png" onclick="openNav(this)">
+				<div class="topnav" id="myTopnav">
+	  			<a href="#inicio">INICIO</a>
+	  			<a href="#quienes">QUIENES SOMOS</a>
+	 			<a href="#faqs">FAQs</a>
+	 			<a href="#ayuda">AYUDA</a>
+	 			<a href="">INGRESAR</a>
+			</div>
+
+			</div>
+			<nav class="panel">
+				<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#inicio">Inicio</a>
+				  <a href="#quienes">Quienes Somos</a>
+				  <a href="#faqs">FAQs</a>
+				  <a href="#ayuda">Ayuda</a>
+				  <a href="login.php">Ingresar</a>
+
+				</div>
+
+			</nav>
+
+
+		</div>
+		<script>
+			var hamburgerView;
+			function openNav(x) {
+				hamburgerView = x;
+			    x.classList.toggle("change");
+			    document.getElementById("mySidenav").style.width = "250px";
+	    		document.getElementById("main").style.marginLeft = "250px";
+	    		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+			}
+			function closeNav() {
+				hamburgerView.classList.toggle("change");
+	    		document.getElementById("mySidenav").style.width = "0";
+	   		 	document.getElementById("main").style.marginLeft = "0";
+	   		 	document.body.style.backgroundColor = "white";
+			}
+		</script>
+	</header>
+@yield("content")
+
+</body>
+</html>
