@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="form-login">
+    <i class="fa fa-times" aria-hidden="true"></i>
     <h1 class="h1-login">Iniciar sesión en Llevame</h1>
 		<form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
@@ -55,6 +56,7 @@
 
     </div>
     <div class="form-registrarse">
+      <i class="fa fa-times" aria-hidden="true" style="color:grey"></i>
     	<h1 class="h1-cuenta">Crear cuenta</h1>
      	<form class="form-horizontal" method="POST" action="{{ route('register') }}">
             {{ csrf_field() }}
@@ -130,6 +132,7 @@
 		  <button class="boton-llevar" type="button" name="LLEVAR">LLEVAR</button>
 		</div>
 	</div>
+  <!--
 	<div id= "quienes" class="contenedor-quienes">
     <section class="titulo-quienes">
       <article>
@@ -152,7 +155,54 @@
     <button type="button" name="INGRESAR">INGRESAR</button>
     </article>
   </div>
-</div>
+</div>-->
+
+
+{{-- <section id= "quienes" class="contenedor-quienes">
+  <article class="titulo-quienes">
+    <h2>¿TE LLEVO?</h2>
+    <img src="imagenes/logotodoblanco.png"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
+     </p>
+  </article>
+  <article class="imagen-quienes">
+     <img src="imagenes/quienessomos.jpg">
+    <button type="button" name="INGRESAR">INGRESAR</button>
+  </article>
+</section>
+ --}}
+
+   <div class="container-quienes">
+
+    <article class="quienes-texto">
+        <div class="titulo">
+          <h2>¿TE LLEVO?</h2>
+          <img src="imagenes/logotodoblanco.png">
+       </div>
+     <div class="informacion">
+       <p>LLevame es una empresa nacional que proporciona una red social de transporte compartida
+       con todos los usuarios de ella. El vinculo entre usuarios se da por medio de pasajeros y
+       conductores, pasajeros que buscan transporte para llegar a sus destinos y conductores que buscan
+       compartir su viaje con otros e economizar gastos.
+       Consiste en un buscador para los pasajeros y un sistema de posteo para que los conductores puedan
+       especificar sus datos de origen, destino, horario, fecha, cantidad de pasajeros que pueden llevar y el precio
+       por persona. </p>
+     </div>
+   </article>
+
+   <article class="quienes-imagen">
+      <img src="imagenes/quienessomos.jpg" alt="">
+   </article>
+
+
+
+
+  </div>
+
+
+
 <div id= "faqs" class="preg-container">
     <h1 class="h1-faqs">FAQs</h1>
 

@@ -123,71 +123,30 @@ body {
   display: none;}
 
 /*QUIENES SOMOS*/
-
-* {
-    box-sizing: border-box;}
-html,
-body,
-ul {
-    margin: 0;
-    border: 0;
-    padding: 0;}
-.contenedor-quienes {
-    background-color: #00f07f;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: 8px;}
-.titulo-quienes {
-    width: 95%;
-    margin: 0 auto;}
-.titulo-quienes h2 {
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: oblique;
-    font-size: 2em;
-    color: white;
-    padding-top: 18px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0;}
-.titulo-quienes img {
-    width: 100%;
-    padding-left: 25px;
-    padding-right: 5px;}
-.texto-quienes {
-    width: 95%;
-    margin: 0 auto;
-    overflow: hidden;}
-.texto-quienes article {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: normal;
-    width: 95%;
-    color: white;
-    font-size: 0.7em;
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;}
-.imagen-quienes article {
-    width: 95%;
-    margin: 0 auto;}
-.imagen-quienes img {
-    display: none;
-    width: 95%;
-    position: absolute;
-    z-index: 0;}
-.imagen-quienes button {
-    display: none;
-    z-index: 5;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold;
-    font-size: 0.8em;
-    color: white;
-    padding: 5px;
-    border-style: solid;
-    background-color: inherit;
-    border-color: white;
-    border-width: 2px;
-    position: absolute;}
+.container-quienes {
+  width: 100%;
+  background-color:#00f07f;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.quienes-texto {
+  width: 100%;
+  font-size: 2rem;
+  padding: 20px;
+}
+.quienes-texto h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: oblique;
+}
+.quienes-texto .titulo img {
+  width: 80%;
+  margin-left: 25px;
+}
+.quienes-texto .informacion {
+  font-size: 1rem;
+}
+.quienes-imagen {display: none;}
 /*FAQS*/
 
 .img-faqs {
@@ -341,7 +300,9 @@ ul {
     text-decoration: none;
     color: #42f471;
     margin: 0;}
+/*PERFIL WEB*/
 
+form.completar-perfil-web {display: none;}
 /*FEED*/
 *{box-sizing: border-box;}
 .container-misViajes {display: none;}
@@ -354,7 +315,7 @@ ul {
 .llevame-blanco {
     width: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 56px;
     background-color: white;
   }
 .llevame-botones {
@@ -412,15 +373,15 @@ ul {
     width: 60%;
     float: left;}
 .info-Feed-misViajes .usuario {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     padding-top: 4%;}
 .info-Feed-misViajes .dia {
     font-weight: bold;
-    font-size: 0.85rem;}
+    font-size: 1.2rem;}
 .info-Feed-misViajes .origen {
     width: 100%;}
 .info-Feed-misViajes .origen p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-left: 8%;}
 .info-Feed-misViajes .origen img {
     width: 6%;
@@ -429,7 +390,7 @@ ul {
 .info-Feed-misViajes .destino {
     width: 100%;}
 .info-Feed-misViajes .destino p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-left: 8%;}
 .info-Feed-misViajes .destino img {
     width: 6%;
@@ -452,11 +413,11 @@ ul {
     margin-right: 1%;}
 .info-Feed-misViajes .espacio-disponible {
     float: left;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     padding-top: 1%;}
 .info-Feed-misViajes .precio {
     float: right;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     padding-top: 1%;}
 .opciones-Feed-misViajes {
     width: 10%;
@@ -474,12 +435,20 @@ ul {
     clear: both;}
 
 /*MIS VIAJES*/
-.container-misViajes-Mobile, .container-misViajes {
+.container-misViajes-Mobile, .container-misViajes, {
     width: 100%;
     font-family:'Nunito Sans', sans-serif;
     margin: 0 auto;
     color: #808080;
-    background-color: grey;
+    background-color: white;
+}
+.container-misViajes-Mobile .form-misViajes {
+  width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 58px;
 }
 
 .form-misViajes {
@@ -495,6 +464,8 @@ ul {
   padding-top: 1%;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 1%
+  font-family: 'Nunito Sans', sans-serif;
 }
 .titulo-misViajes img{
   width: 8%;
@@ -507,7 +478,7 @@ ul {
   border-top: 1px solid grey;
   padding-bottom: 3%;
 }
-.posteo-misViajes .flecha-verde img {
+.posteo-misViajes .flecha-verde-gris img {
   width: 9%;
   float: left;
   margin-right: 4%;
@@ -543,6 +514,96 @@ ul {
   margin-right: 1%;
 }
 .opciones-Feed-misViajes .img4 { width: 55%;}
+.PRUEBA {display: none;}
+
+/*MIS VIAJES REALIZADOS*/
+.form-misViajes-Realizados {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top:10px;
+  }
+#adicional-status {
+  color: #00f07f;
+  font-weight: bold;
+}
+ /*MENSAJES*/
+ .container-mensajes-web {
+   display: none;
+ }
+ .container-mensajes {
+   width: 100%;
+   margin: 0 auto;
+   font-family:'Nunito Sans', sans-serif;
+   margin-top: 58px;
+ }
+ .mensajes{
+   width: 100%;
+   float: left;
+   overflow: hidden;
+   background-color: white;
+   padding-left: 2%;
+   padding-right: 2%;
+   color: grey;
+   padding-bottom: 2%;
+ }
+ .titulo-mensajes {
+   border-bottom: 2px solid grey;
+ }
+ .titulo-mensajes img {
+   display: inline-block;
+   width: 8%;
+   float: left;
+ }
+ .titulo-mensajes p {
+   margin-top: 0px;
+   margin-bottom: 0;
+   margin-left: 13%;
+   padding-top: 4px;
+ }
+ .mensaje-info {
+   border-bottom: 1px solid grey;
+   overflow: hidden;
+   border-top: 1px solid grey;
+   margin-top: 15px;
+   padding-bottom: 10px;
+ }
+ .mensaje-foto {
+   width: 20%;
+   float: left;
+   padding-top: 10px;
+ }
+ .mensaje-foto img {
+   width: 75%;
+   float: left;
+   margin-right: 4%;
+   padding-top: 3%;
+   border-radius: 50%;
+ }
+ .mensaje-texto  {
+   width: 70%;
+   float: left;
+   padding-top: 10px;
+ }
+ .mensaje-texto p {
+  margin:0;
+  font-size: 0.7rem;
+  padding-top: 2px;
+ }
+ .mensaje-texto .usuario {
+   font-weight: bold;
+ }
+
+.mensaje-opciones {
+  width: 10%;
+  float: right;
+  background-color: grey;
+}
+.mensaje-opciones img {
+  width: 80%;
+}
 
 /*LLEVAR*/
   *{box-sizing: border-box;}
@@ -561,7 +622,6 @@ ul {
    form.llevar{
    width: 100%;
    margin: 0 auto;
-   margin-top: 100px;
    background-color: white;
    margin-bottom: 40px;
    }
@@ -655,10 +715,299 @@ ul {
 }
  .origen, .destino, .horario, .fecha, .pasajeros {margin-bottom: 3%;}
 
+ /*BUSCAR-WEB*/
+ form.buscar-web{
+  display: none;
+}
+  /*form.buscar-web{
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 10px;
+  overflow: hidden;
+  }
+  .buscar-web input {
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00f07f;
+  font-size: 0.8em;
+  position: relative;
+  padding-left: 50px;
+  width: 100%;}
+  .formulario-buscar-web button{
+   width: 7%;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   font-size: 0.8em;
+   color: white;
+   float: right;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 7px;
+   background-color: #00f07f;
+   border-style: none;
+   margin-bottom: 20px;}
+ .formulario-buscar-web{
+   padding-left: 3%;
+   padding-right: 3%;
+   position: relative;}
+  .buscar-web img{
+   width: 21px;
+   position: absolute;
+   z-index: 22;
+   margin-top: 4px;
+   margin-left: 10px;}
+
+  .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
+*/
+  /*BUSCAR-MOBILE*/
+   form.buscar-mobile{
+   width: 100%;
+   margin: 0 auto;
+   background-color: white;
+   margin-bottom: 40px;
+   overflow: hidden;
+   margin-top: 58px;}
+   .buscar-mobile input {
+   padding: 5px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #00f07f;
+   font-size: 0.8em;
+   position: relative;
+   padding-left: 50px;
+   width: 100%;}
+  .formulario-buscar{
+   padding-left: 3%;
+   padding-right: 3%;
+   position: relative;
+   margin-top: 15px;}
+   .formulario-buscar button{
+   width: 100%;
+   margin-top: 20px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   font-size: 0.8em;
+   color: white;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: #00f07f;
+   border-style: none;
+   margin-bottom: 20px;}
+   .buscar-mobile img{
+   width: 21px;
+   position: absolute;
+   z-index: 22;
+   margin-top: 4px;
+   margin-left: 10px;}
+
+   .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
+
+
+  /*COMPLETAR PERFIL*/
+    *{box-sizing: border-box;}
+   html, body, ul {
+   margin: 0;
+   border: 0;
+   padding: 0;
+   overflow-x: hidden;}
+   .contenedor-perfil{
+   max-width: 100%;
+   margin: 0 auto;
+   overflow: hidden;
+   background-color: grey;}
+   form.completar-perfil{
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 60px;
+   background-color: black;
+   margin-bottom: 40px;}
+   .completar-perfil input {
+   padding: 8px;
+   border-style: none;
+   border-bottom-color: grey;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   background-color: black;
+   font-size: 1em;
+   position: relative;
+   padding-left: 50px;
+   width: 100%;}
+   .formulario-perfil{
+   padding-left: 3%;
+   padding-right: 3%;}
+   .formulario-perfil button{
+   margin-left: 30%;
+   margin-top: 30px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   font-size: 1em;
+   color: white;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 18px;
+   padding-right: 18px;
+   background-color: #00f07f;
+   border-style: none;
+   margin-bottom: 30px;}
+   .formulario-perfil img{
+   width: 23px;
+   position: absolute;
+   z-index: 22;
+   margin-top: 5px;
+   margin-left: 10px;
+   }
+   .h2-perfil{
+   font-size: 2em;
+   color: #00f07f;
+   border-style: none;
+   border-bottom-color: #00f07f;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   padding-top: 20px;}
+   .h1-perfil{
+   margin-top: 50px;
+   font-size: 1em;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   color: #00f07f;
+   border-style: none;
+   border-bottom-color: #00f07f;
+   border-top-color: #00f07f;
+   border-bottom-style: solid;
+   border-top-style: solid;
+   border-bottom-width: 1px;
+   border-top-width: 1px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   clear: both;}
+   input#nombre-completado.form-completar-perfil{
+   width: 178px;
+   margin-left: 120px;
+   padding-left: 0;
+   float: right;
+   position: absolute;}
+   input#apellido-completado.form-completar-perfil{
+   width: 178px;
+   margin-left: 120px;
+   padding-left: 0;
+   float: right;
+   position: absolute;
+   margin-top: 40px;}
+   input#subir-foto-usuario{
+   width: 195px;
+   margin-top: 25%;
+   font-size: 0.8em;
+   margin-left: 12px;
+   padding-left: 0;
+   padding-bottom: 2px;
+   position: absolute;
+   clear: both;
+   -webkit-text-fill-color: grey;
+   border-bottom: none;}
+   #circulo-perfil-foto{
+   width: 80px;
+   height: 80px;
+   margin-left: 5px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 25px;
+   border-radius: 40px;
+   background: grey;
+   float: left;
+   margin-bottom: 45px;}
+   .completar-trabajo, .completar-nacimiento, .completar-direccion, .completar-lugar-nac, .completar-profesion, .completar-estudio, .completar-musica, .completar-hobbies {margin-bottom: 3%;}
+
+     /*CAMBIAR CUENTA*/
+   *{box-sizing: border-box;}
+   html, body, ul {
+   margin: 0;
+   border: 0;
+   padding: 0;
+   overflow-x: hidden;}
+   .contenedor-cuenta{
+   max-width: 100%;
+   margin: 0 auto;
+   overflow: hidden;
+   background-color: grey;}
+   form.editar-cuenta{
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 60px;
+   background-color: darkgrey;
+   margin-bottom: 40px;}
+   .editar-cuenta input {
+   padding: 8px;
+   border-style: none;
+   border-bottom-color: white;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   background-color: darkgrey;
+   font-size: 1em;
+   position: relative;
+   width: 100%;}
+   .formulario-cuenta{
+   padding-left: 3%;
+   padding-right: 3%;}
+   .formulario-cuenta button{
+   margin-left: 27%;
+   margin-top: 30px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   font-size: 1em;
+   color: white;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 18px;
+   padding-right: 18px;
+   background-color: #00f07f;
+   border-style: none;
+   margin-bottom: 30px;}
+   .h2-cuenta{
+   font-size: 2em;
+   color: white;
+   border-style: none;
+   border-bottom-color: white;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   padding-top: 20px;}
+   .h1-cuenta{
+   margin-top: 15px;
+   font-size: 1em;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   color: #00f07f;
+   border-style: none;
+   border-bottom-color: white;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;}
+   button#cerrar-cuenta{
+   border-style: none;
+   background-color: inherit;
+   color: lightgrey;
+   padding: 0;
+   margin-left: 0;
+   margin-top: 4px;}
+   .contraseña-actual, .contraseña-nueva, .confirmar-nueva, .mail-actual, .mail-nuevo, .confirmar-nuevo {margin-bottom: 3%;}
+
  /*MENU-FOOTER*/
  .contenedor-menu-footer-mobile{
    max-width: 100%;
-   margin: 0 auto;}
+   margin: 0 auto;
+   position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;}
  .menu-footer-mobile {
      background-color: black;
      height: 60px;
@@ -679,7 +1028,6 @@ ul {
    }
 
 /*FOOTER*/
-
 footer {
     background-color: rgb(27, 23, 24);
     height: 428px;
@@ -747,6 +1095,8 @@ footer .sn-footer ul li {
 footer div ul {
     list-style-type: none;
 }
+.container-footer-interior {display: none;}
+
 /*MEDIAS QUERIES*/
 
 @media screen and (max-height: 450px) {
@@ -780,15 +1130,6 @@ footer div ul {
     .flecha {
       display: none;}
 
-    /*QUIENES SOMOS*/
-    .texto-quienes article {
-        font-size: 1em;
-        margin-right: 0;}
-    .imagen-quienes img {
-        display: none;}
-    .imagen-quienes button {
-        display: none;}
-
     /*FAQS*/
     .h1-faqs {
         top: 5%;}
@@ -798,6 +1139,9 @@ footer div ul {
     .h2-ayuda {
         font-size: 1.4rem;}
   /*FEED*/
+    .llevame-botones {
+      padding-top: 24px;
+    }
     .llevame-botones .b1 {
       padding-left: 12%;
     }
@@ -806,15 +1150,15 @@ footer div ul {
     }
     .container-misViajes {display: none;}
     .info-Feed-misViajes .usaurio {font-size: 0.8rem;}
-    .info-Feed-misViajes .dia {font-size: 1.0rem;}
+    .info-Feed-misViajes .dia {font-size: 1.5rem;}
     .info-Feed-misViajes .origen { margin-bottom: 1%;}
-    .info-Feed-misViajes .origen p {font-size: 0.9rem;}
+    .info-Feed-misViajes .origen p {font-size: 1.4rem;}
     .info-Feed-misViajes .origen img {margin-top: 0;}
-    .info-Feed-misViajes .destino p {font-size: 0.9rem;}
+    .info-Feed-misViajes .destino p {font-size: 1.4rem;}
     .info-Feed-misViajes .destino img {margin-top: 1%;}
     .posteo .adicionales img {margin-right: 1%;}
-    .info-Feed-misViajes .espacio-disponible {font-size: 0.7rem;}
-    .info-Feed-misViajes .precio {font-size: 0.7rem;}
+    .info-Feed-misViajes .espacio-disponible {font-size: 1rem;}
+    .info-Feed-misViajes .precio {font-size: 1rem;}
     .opciones-Feed-misViajes .img1 {width: 50%;}
     .opciones-Feed-misViajes .img2 {width: 50%;}
     .opciones-Feed-misViajes .img3 {width: 50%;}
@@ -836,23 +1180,56 @@ footer div ul {
     .botones-llevar .b2 {
       padding-left: 20%;
     }
+    /*BUSCAR-MOBILE*/
+    form.buscar-mobile{margin-top: 120px;}
+    .buscar-mobile button{margin-top: 5px;}
+
+    /*COMPLETAR PERFIL*/
+    input#nombre-completado.form-completar-perfil {width: 327px;}
+    input#apellido-completado.form-completar-perfil {width: 327px;}
+    input#subir-foto-usuario{margin-top: 17%;}
+
+    /*CAMBIAR CUENTA*/
+    .formulario-cuenta button {
+      margin-left: 8%;}
+    .formulario-cuenta {
+        margin-top: 84px;}
+
+  /*MENU MOBILE FOOTER*/
+  .img-menu-footer:first-child {margin-left: 31px;}
+  .img-menu-footer:last-child {margin-right: 31px;}
+/*MENSAJES*/
+   .titulo-mensajes {
+     padding-bottom: 5px;
+   }
+   .titulo-mensajes p {
+     font-size: 1.4rem;
+     margin-left: 10%;
+     padding-top: 4px;
+   }
+   .titulo-mensajes img {
+     width: 8%;
+   }
+   .mensaje-texto p {
+     font-size: 1rem;
+   }
+   .mensaje-texto img {
+     margin-left: 4%;
+   }
+
+
 
 }
+
 @media (min-width: 768px) {
     /*HEADER*/
 
-    .iconomenumobile {
-        display: none;
-    }
+    .iconomenumobile {display: none;}
     .logo {
         width: 23%;
-        margin-top: 2%;
-    }
+        margin-top: 2%;}
     /* The side navigation menu */
-
-    .sidenav {
-        display: none;
-    }
+    .sidenav {display: none;}
     .topnav {
         display: inline-block;
         position: relative;
@@ -928,35 +1305,58 @@ footer div ul {
       margin-top: 3%;
     }
     /*QUIENES SOMOS*/
+    .container-quienes {
+      overflow: hidden;
+    }
+    .quienes-texto {
+      width: 30%;
+      float: left;
+    }
+    .quienes-texto h2 {
+    font-size: 1.4rem;}
+    .quienes-texto .informacion p {
+      font-size: 0.6rem;
+      margin: 0;}
+    .quienes-imagen {
+      width: 67%;
+      display: inline-block;
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .quienes-texto .titulo img {
+      width: 62%;
+      margin-left: 25px;
+    }
+    .quienes-imagen img {
+      width: 100%;
+    }
+    .texto-sobreImagen {
+      width: 50%;
+      float: right;
+      background-color: rgba(0, 240, 127, 0.3);
+      position: absolute;
+      left: 50%;
+      height: 100%;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .texto-sobreImagen p {
+      margin: 0;
+      font-family:
+      font-weight: bold;
+    }
 
-    .titulo-quienes {
-        float: right;
-    }
-    .titulo-quienes h2 {
-        font-size: 2em;
-    }
-    .titulo-quienes img {
-        width: 45%;
-    }
-    .texto-quienes {
-        float: right;
-    }
-    .texto-quienes article {
-        font-size: 0.8em;
-        width: 43%;
-    }
-    .imagen-quienes button {
-        display: inline;
-        margin-left: 77%;
-        margin-top: 51%;
-    }
-    .imagen-quienes img {
-        display: inline-block;
-        margin-left: 45%;
-        margin-top: 35%;
-        padding-left: 5px;
-        width: 50%;
-        margin-right: 10%;
+    .texto-sobreImagen button {
+      margin-top: 80px;
+      background-color: transparent;
+      border: 1px solid white;
+      font-weight: bold;
+      color: white;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1rem;
     }
     /*FAQS*/
 
@@ -1029,29 +1429,30 @@ footer div ul {
         width: 20%;
         margin-top: 6%;
         margin-left: 38%;}
-    .posteo .foto3 {width: 20%;}
-    .info-Feed-misViajes .usuario {font-size: 1.1rem;}
-    .info-Feed-misViajes .dia {font-size: 1.4rem;}
+    .posteo .foto3 {width: 20%; margin-top: 4%;}
+    .info-Feed-misViajes .usuario {font-size: 1.5rem;}
+    .info-Feed-misViajes .dia {font-size: 2.2rem;}
     .info-Feed-misViajes .origen p {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         margin-left: 6%;}
     .info-Feed-misViajes .origen {margin-bottom: 2%;}
     .info-Feed-misViajes .origen img {
         width: 4%;
         margin: 0;
-        padding: 0;}
+        padding: 0;
+        margin-top: 3px;}
     .info-Feed-misViajes .destino img {
         width: 4%;
-        margin-top: 0;}
+        margin-top: 3px;}
     .info-Feed-misViajes .destino {
       margin:0;
     }
     .info-Feed-misViajes .destino p {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         margin-left: 6%;}
     .posteo .adicionales img {width: 5%;}
-    .info-Feed-misViajes .espacio-disponible {font-size: 1rem;}
-    .info-Feed-misViajes .precio {font-size: 1rem;}
+    .info-Feed-misViajes .espacio-disponible {font-size: 1.5rem;}
+    .info-Feed-misViajes .precio {font-size: 1.5rem;}
     .opciones-Feed-misViajes {width: 8%;}
     .opciones-Feed-misViajes .img1 {width: 48%;}
     .opciones-Feed-misViajes .img2 {width: 48%;}
@@ -1092,17 +1493,99 @@ footer div ul {
         margin-left: 50px;}
     input#destino.form-posteo{width: 330px;}
     input#origen.form-posteo{width: 330px;}
+    input#horario.form-posteo{width: 330px;}
+    input#fecha.form-posteo{width: 330px;}
+    input#pasajeros.form-posteo{width: 330px;}
+    input#precio.form-posteo{width: 330px;}
     .formulario-llevar .horario{
         float: left;
         margin-top: 20px;}
     .formulario-llevar .fecha{
         float: left;
-        margin-left: 10px;
+        margin-left: 50px;
         margin-top: 20px;}
     .formulario-llevar .pasajeros{
         float: left;
-        margin-left: 10px;
         margin-top: 20px;}
+    .formulario-llevar .precio{
+        float: left;
+        margin-left: 50px;
+        margin-top: 20px;}
+
+   /*BUSCAR-MOBILE*/
+    .buscar-mobile input {
+        padding: 5px;
+        border-width: 1.5px;
+        font-size: 0.6em;
+        position: relative;
+        padding-left: 25px;
+        width: 21%;}
+    input#origen.form-buscar{
+        float: left;
+        display: inline-block;
+        margin-right: 10px;}
+    input#destino.form-buscar{
+        float: left;
+        display: inline-block;
+        margin-right: 10px;}
+    input#horario.form-buscar{
+        float: left;
+        display: inline-block;
+        margin-right: 10px;}
+    input#fecha.form-buscar{
+        float: left;
+        display: inline-block;}
+    .formulario-buscar button{
+        width: 10%;
+        float: right;
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-bottom: 3px;
+        padding-top: 4px;
+        padding-left: 10px;
+        padding-right: 10px;}
+    .buscar-mobile img {
+        width: 12px;
+        margin-top: 4.5px;
+        margin-left: 8px;}
+
+      /*COMPLETAR PERFIL*/
+    input#nombre-completado.form-completar-perfil {width: 327px;margin-left: 150px;}
+    input#apellido-completado.form-completar-perfil {width: 327px;margin-left: 150px;}
+    input#subir-foto-usuario{margin-top: 13%;margin-left: 3%;}
+    form.completar-perfil{margin-top: 80px;}
+    #circulo-perfil-foto {
+      width: 100px;
+      height: 100px;
+      margin-left: 5px;
+      border-radius: 50px;
+      margin-bottom: 45px;}
+    .formulario-perfil button{margin-left:40%;}
+
+    /*CAMBIAR CUENTA*/
+    .formulario-cuenta button{margin-left:25%;}
+
+    /*MENSAJES*/
+    .titulo-mensajes {
+    }
+    .titulo-mensajes img {
+      width: 6%;
+    }
+    .titulo-mensajes p{
+      font-size: 1.8rem;
+    }
+    .mensaje-texto p {
+      font-size: 1.5rem;
+    }
+    /*MENU MOBILE FOOTER*/
+    .img-menu-footer:first-child {
+        margin-left: 60px;
+      }
+    .img-menu-footer:last-child {
+        margin-right: 60px;
+      }
 
     /*FOOTER*/
     footer {
@@ -1226,10 +1709,12 @@ footer div ul {
         border-width: 5px;
         background-color: rgba(0, 240, 127, 1);}
     /*QUIENES SOMOS*/
+    .quienes-texto h2 {font-size: 1.8rem;}
+    .quienes-texto .informacion p {font-size: 0.75rem;}
+    .texto-sobreImagen button {font-size: 1.2rem; margin-top: 100px;}
+    .texto-sobreImagen p {
+      font-size: 1.3rem;}
 
-    .imagen-quienes img {margin-top: 32%;}
-    .imagen-quienes button {margin-top: 49%;}
-    .texto-quienes article {font-size: 1em;}
     /*FAQS*/
 
     .preg-container h2 {font-size: 22px;}
@@ -1239,83 +1724,284 @@ footer div ul {
     .grafico-mobile {display: none;}
     .h1-ayuda {font-size: 2.4rem;}
     .h1-ayuda {font-size: 2rem;}
+
+       /*LOG IN*/
+
+.form-login {
+    width: 26.65%;
+    text-align: center;
+    float: right;
+    background-color: #808080;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 6;
+    right: 0;}
+
     /*FEED*/
+    .llevame-botones {
+      padding-top: 0;
+    }
     .container-feed {
      width: 100%
      background-color: grey;
         }
     .llevame-blanco {
-      width: 65%;
+      width: 40%;
       float: left;
       margin: 0 auto;
-      margin-left: 20px;
+      margin-left: 3%;
       margin-top: 120px;
       background-color: white;
     }
+    .llevame-blanco .b1 {
+      font-size: 1.6rem;
+      padding-left: 9%;
+    }
+    .llevame-blanco .b2 {
+      font-size: 1.6rem;
+      padding-left: 15%;
+    }
     .llevame-blanco .posteo {
       width: 95%;
-      margin: 0 auto;
+      margin-left: 11px;
+      margin-bottom: 10px;
     }
+    .info-Feed-misViajes .usuario {font-size: 1rem;}
+    .info-Feed-misViajes .dia { font-size: 1.2rem;}
     .info-Feed-misViajes .origen {margin-bottom: 2%;}
-    .info-Feed-misViajes .origen img {margin-top: 1%;}
-    .info-Feed-misViajes .destino img {margin-top: 1%;}
+    .info-Feed-misViajes .origen p {font-size: 1rem;}
+    .info-Feed-misViajes .origen img {margin-top: 2%;}
+    .info-Feed-misViajes .destino p {font-size: 1rem;}
+    .info-Feed-misViajes .destino img {margin-top: 2%;}
+    .info-Feed-misViajes .espacio-disponible {font-size: 0.9rem;}
+    .info-Feed-misViajes .precio {font-size: 0.9rem;}
     .posteo .adicionales img {width: 6%;}
 
      /*MIS VIAJES*/
      .container-misViajes {
-       display: inline-block;
-       width: 30%;
-       float: right;
-       margin-right: 20px;
-       margin-top: 120px;}
+      display: inline-block;
+      width: 22%;
+      float: right;
+      margin-right: 5%;
+      margin-top: 120px;
+      background-color: white;}
     .titulo-misViajes p{
-     font-size: 1.3rem;
-     margin-left: 2%;
+      font-size: 1.2rem;
+      margin-left: 2%;
      }
      .titulo-misViajes img { padding-top: 3%;}
-     .fecha-hora-misViajes .origen p {font-size: 1rem;}
-     .fecha-hora-misViajes .destino p {font-size: 1rem;}
-     .fecha-hora-misViajes .dia {font-size: 1.2rem;}
-     .adicionales-misViajes .espacio-disponible {font-size: 0.6rem;}
-     .adicionales-misViajes .precio { font-size: 0.6rem;}
+     .fecha-hora-misViajes .dia {font-size: 1.1rem;}
+     .fecha-hora-misViajes .origen p {font-size: 0.95rem;}
+     .fecha-hora-misViajes .destino p {font-size: 0.95rem;}
+     .adicionales-misViajes .espacio-disponible {font-size: 0.8rem;}
+     .adicionales-misViajes .precio { font-size: 0.8rem;}
+     .opciones-Feed-misViajes .img1 {width: 70%;}
+     .opciones-Feed-misViajes .img2 {width: 70%;}
+     .opciones-Feed-misViajes .img3 {width: 70%;}
+     .opciones-Feed-misViajes .img4 {width: 70%;}
+.PRUEBA {
+  display: inline-block;
+  width: 22%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 120px;
+  border: 1px solid red;
+}
+.PRUEBA h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family:'Nunito Sans', sans-serif;
+}
 
+
+ /*MENSAJES*/
+    .container-mensajes {display: none;}
+    .container-mensajes-web {
+       display: inline-block;
+       width: 22%;
+       float: right;
+       margin-right: 5%;
+       font-family:'Nunito Sans', sans-serif;
+       margin-top: 14px;
+      }
+    .titulo-mensajes { padding-bottom: 0%;}
+    .titulo-mensajes p {
+      font-size: 1.2rem;
+      margin-left: 15%;
+    }
+    .titulo-mensajes img {
+      width: 12%;
+    }
+    .mensaje-texto {
+     padding-right:2%;
+    }
+    .mensaje-texto p {
+      font-size: 0.9rem;
+    }
+    .mensaje-info {
+      margin-top: 8px;
+    }
 
   /*LLEVAR*/
     form.llevar{
-        width: 65%;
-        margin-left: 20px;
-        margin-top: 120px;
         margin-bottom: 40px;
         float: left;
         background-color: white;}
-    .formulario-llevar.origen{
+    .formulario-llevar label {font-size: 1.5rem;}
+    .formulario-llevar input {
+      padding-left: 15%;
+      font-size: 0.8em;
+    }
+    .formulario-llevar img {width: 15px;}
+    .formulario-llevar .origen{
         float: left;
-        display: grid;
-        margin-left: 12px;
-        margin-top: 10px;}
-    .formulario-llevar.destino{
+        margin-top:}
+    .formulario-llevar .destino{
+        float: right;
+        margin-left: 5%;
+        margin-top: 0%;}
+    input#destino.form-posteo{width: 170px;}
+    input#origen.form-posteo{width: 170px;}
+    input#horario.form-posteo{width: 170px;}
+    input#fecha.form-posteo{width: 170px;}
+    input#pasajeros.form-posteo{width: 170px;}
+    input#precio.form-posteo{width: 170px;}
+    .formulario-llevar .horario{
         float: left;
-        display: inline-block;
-        margin-left: 65px;
-        margin-top: 12px;}
-    input#destino.form-posteo{width: 250px;}
-    input#origen.form-posteo{width: 250px;}
-    input#horario.form-posteo{width: 160px;}
-    input#fecha.form-posteo{width: 160px;}
-    input#pasajeros.form-posteo{width: 212px;}
-    .formulario-llevar.horario{
-        float: left;
-        margin-top: 20px;
-        margin-left: 15px;}
+        margin-top: 0%;}
     .formulario-llevar .fecha{
-        float: left;
-        margin-left: 10px;
-        margin-top: 20px;}
+        float: right;
+        margin-left:5%;
+        margin-top: 0%;}
     .formulario-llevar .pasajeros{
         float: left;
-        margin-left: 10px;
-        margin-top: 20px;}
-    .formulario-llevar button{margin-left: 32%;}
+        margin: 0%;}
+    .formulario-llevar .precio{
+      float: right;
+      margin-left:5%;
+      margin-top: 0%;}
+    .formulario-llevar button{
+      margin-left: 36%;
+      font-size: 1em;}
+    .botones-llevar .b1 {
+      font-size: 1.6rem;
+    }
+    .botones-llevar .b2 {
+      font-size: 1.6rem;
+      padding-left: 10%;
+    }
+
+    /*BUSCAR-WEB*/
+     form.buscar-web{
+  /*display: none;*/
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 10px;
+  overflow: hidden;
+  }
+  .buscar-web input {
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00f07f;
+  font-size: 0.8em;
+  position: relative;
+  padding-left: 50px;
+  width: 100%;}
+  .formulario-buscar-web button{
+   width: 7%;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: bold;
+   font-size: 0.8em;
+   color: white;
+   float: right;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 7px;
+   background-color: #00f07f;
+   border-style: none;
+   margin-bottom: 20px;}
+ .formulario-buscar-web{
+   padding-left: 3%;
+   padding-right: 3%;
+   position: relative;}
+  .buscar-web img{
+   width: 21px;
+   position: absolute;
+   z-index: 22;
+   margin-top: 4px;
+   margin-left: 10px;}
+
+  .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
+
+    form.buscar-web{display: inline-block;}
+    .buscar-web input {
+      padding: 5px;
+      border-width: 1.5px;
+      font-size: 0.6em;
+      position: relative;
+      padding-left: 25px;
+      width: 21%;}
+    input#origen.form-buscar{
+      float: left;
+      display: inline-block;
+      margin-right: 8px;}
+    input#destino.form-buscar{
+      float: left;
+      display: inline-block;
+      margin-right: 8px;}
+     input#horario.form-buscar{
+      float: left;
+      display: inline-block;
+      margin-right: px;}
+     input#fecha.form-buscar{
+       float: left;
+       display: inline-block;}
+     .buscar-web img {
+      width: 12px;
+      margin-top: 4.5px;
+      margin-left: 8px;}
+
+      /* PERFIL WEB*/
+      form.completar-perfil-web {
+        display: inline-block;
+        width: 22%;
+
+      }
+      /*COMPLETAR PERFIL*/
+
+      form.completar-perfil{
+          width: 40%;
+          margin-left: 3%;
+          margin-top: 120px;
+          margin-bottom: 40px;
+          float: left;}
+      input#nombre-completado.form-completar-perfil {width: 235px; margin-left: 123px;}
+      input#apellido-completado.form-completar-perfil {width: 235px; margin-left: 123px;}
+      input#subir-foto-usuario{margin-top: 11%;margin-left: 2%;}
+      form.completar-perfil{margin-top: 80px;}
+      #circulo-perfil-foto {
+      width: 100px;
+      height: 100px;
+      margin-left: 5px;
+      border-radius: 50px;
+      margin-bottom: 45px;}
+      .formulario-perfil button{margin-left:32%;}
+
+    /*CCAMBIAR CUENTA*/
+      form.editar-cuenta{
+          width: 40%;
+          margin-left: 3%;
+          margin-top: 120px;
+          margin-bottom: 40px;
+          float: left;}
+       .formulario-cuenta {margin-top: 18px;}
+       .formulario-cuenta button {margin-left: 29%; margin-top: 0;}
+       .h2-cuenta{padding-top: 0;}
+
     /*MENU FOOTER MOBILE*/
     .contenedor-menu-footer-mobile {display: none;}
 
@@ -1328,6 +2014,45 @@ footer div ul {
     footer .logo-footer img {top: 55%;}
     footer .sn-footer ul li img {height: 38px;}
     footer .sn-footer ul {left: 5%;}
+
+
+    /*FOOTER INTERIOR WEB*/
+    .container-footer-interior {
+      display: inline-block;
+      width: 100%;
+      margin-right: 5%;
+      float: right;
+      margin-top: 14px;
+    }
+    .footer-interior {
+      width: 22%;
+      float: right;
+      background-color: white;
+      font-family:'Nunito Sans', sans-serif;
+      color: grey;
+      padding-left:2%;
+      padding-right: 2%;
+      font-size: 0.8rem;
+    }
+    .container-footer-interior img { width: 5%; margin-right: 2%;}
+    .container-footer-interior a {
+      text-decoration: none;
+      color: grey;
+    }
+    .container-footer-interior p{margin:0;}
+    .menu-links {
+    line-height: 22px;
+    padding-top: 10px;
+    }
+    .container-footer-interior .publicidad {
+      border-top: 1px solid grey;
+      margin-top: 6px;
+      padding-bottom: 10px;}
+    .container-footer-interior .publicidad a {color:#00f07f; font-weight: bold;}
+  }
+
+
+
 @media (min-width: 1200px) {
 
     /*HEADER*/
@@ -1355,20 +2080,6 @@ footer div ul {
         display: block;
         background-color: rgb(70, 71, 73);}
 
-        /*LOG IN*/
-
-.form-login {
-    width: 26.65%;
-    text-align: center;
-    float: right;
-    background-color: #808080;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    margin-top: 100px;
-    position: absolute;
-    z-index: 6;
-    right: 0;}
-
     /*INICIO*/
    #inicio {margin-top: 150px;}
     .inicio1 {
@@ -1385,14 +2096,14 @@ footer div ul {
     .boton-llevar {
         left: 58%;
         bottom: 10%;}
-
     /*QUIENES SOMOS*/
-    .titulo-quienes h2 {font-size: 4em;}
-    .titulo-quienes img {width: 43%;}
-    .texto-quienes article {font-size: 1.2em;}
-    .imagen-quienes img {margin-top: 29.5%;}
-    .imagen-quienes button {margin-top: 47%;}
-
+    .quienes-texto .informacion p {font-size: 0.9rem;}
+    .quienes-texto h2 {font-size: 2.3rem;}
+    .texto-sobreImagen p {font-size: 1.8rem;}
+    .texto-sobreImagen button {
+      font-size: 1.5rem;
+      margin-top: 110px;
+    }
     /*FAQS*/
     .preg-container h2 {font-size: 28px;}
     .preg-container p {font-size: 18px;}
@@ -1400,35 +2111,73 @@ footer div ul {
     /*AYUDA*/
     .h1-ayuda {font-size: 3.4rem;}
     .h1-ayuda {font-size: 3.2rem;}
+       /*LOG IN*/
+
+.form-login {
+    width: 26.65%;
+    text-align: center;
+    float: right;
+    background-color: #808080;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 6;
+    right: 0;}
+
+    /*WEB PERFIL*/
+    .web-foto-perfil {
+      width: 28%;
+    }
+    .web-info-perfil {
+      font-size: 1rem;
+    }
 
     /*FEED*/
-
+    .info-Feed-misViajes .usuario {font-size: 1.2rem;}
+    .info-Feed-misViajes .dia { font-size: 1.7rem;}
+    .info-Feed-misViajes .origen p {font-size: 1.5rem;}
+    .info-Feed-misViajes .destino p {font-size: 1.5rem;}
+    .info-Feed-misViajes .espacio-disponible {font-size: 1rem;}
+    .info-Feed-misViajes .precio {font-size: 1rem;}
 
     /*MIS VIAJES*/
-   .titulo-misViajes p{
-    font-size: 1.5rem;
-    }
+    .titulo-misViajes p {font-size: 1.3rem;}
     .titulo-misViajes img { padding-top: 2%;}
-    .fecha-hora-misViajes .origen p {font-size: 1rem;}
-    .fecha-hora-misViajes .destino p {font-size: 1rem;}
+    .fecha-hora-misViajes .dia {font-size: 1.4rem;}
+    .fecha-hora-misViajes .origen p {font-size: 1.2rem;}
+    .fecha-hora-misViajes .destino p {font-size: 1.2rem;}
     .fecha-hora-misViajes .destino img {margin-top: 0;}
-    .fecha-hora-misViajes .dia {font-size: 1.2rem;}
-    .adicionales-misViajes .espacio-disponible {font-size: 0.8rem;}
-    .adicionales-misViajes .precio { font-size: 0.8rem;}
+    .posteo-misViajes .adicionales-misViajes img {margin-top: 2px;}
 
     /*LLEVAR*/
-    .llevar button {margin-left: 251px;}
-    input#destino.form-posteo{width: 270px;}
-    input#origen.form-posteo{width: 264px;}
-    input#horario.form-posteo{width: 170px;}
-    input#fecha.form-posteo{width: 170px;}
-    input#pasajeros.form-posteo{width: 225px;}
-    .formulario-llevar button{
-        margin-left: 32.5%;}
+
+    input#destino.form-posteo{width: 235px;}
+    input#origen.form-posteo{width: 235px;}
+    input#horario.form-posteo{width: 235px;}
+    input#fecha.form-posteo{width: 235px;}
+    input#pasajeros.form-posteo{width: 235px;}
+    input#precio.form-posteo{width: 235px;}
+    .formulario-llevar button {margin-left: 40%;}
+    .botones-llevar .b2 { margin-left: 16%;}
+    .formulario-llevar .destino{margin-left: 0%;}
+    .formulario-llevar .fecha{margin-left: 0%;}
+    .formulario-llevar .precio{margin-left: 0%;}
+
+    /*CAMBIAR CUENTA*/
+    .formulario-cuenta button {margin-left: 33%;}
+
+    /*MENSAJES*/
+    .titulo-mensajes img {
+      width: 10%;
+    }
+    .mensaje-texto p {
+      font-size: 1rem;
+    }
 
     /*MENU FOOTER MOBILE*/
     .contenedor-menu-footer-mobile {display: none;}
-    
+
     /*FOOTER*/
     footer .logo-footer img {
         top: 47%;}

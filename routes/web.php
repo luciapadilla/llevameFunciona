@@ -12,8 +12,40 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	if(Auth::check()){
+		Auth::logout();
+		return view('welcome');
+
+	}else{
+    	return view('welcome');
+	}
 });
+
+Route::get('/mensajes', function () {
+    return view('mensajes');
+});
+Route::get('/perfil', function () {
+    return view('perfil');
+});
+Route::get('/buscar', function () {
+    return view('buscar');
+});
+Route::get('/notificaciones', function () {
+    return view('notificaciones');
+});
+Route::get('/misviajes', function () {
+    return view('misViajesMobile');
+});
+
+Route::get('/timeline', function () {
+    return view('timeline');
+});
+
+Route::get('/llevar', function () {
+    return view('llevar');
+});
+
+
 
 
 Auth::routes();
