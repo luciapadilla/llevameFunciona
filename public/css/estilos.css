@@ -1,38 +1,44 @@
 /*HEADER*/
-html {
-    overflow-x: hidden;}
+*{box-sizing: border-box;}
 header {
     position: fixed;
     z-index: 1000;
     top: 0;}
-body {
-    transition: background-color .5s;
-    height: 100%;
-    margin: 0;}
-#inicio {
-    margin-top: 100px;}
+html, body, ul {
+     margin: 0;
+     border: 0;
+     padding: 0;
+     overflow-x: hidden;
+     transition: background-color .5s;
+     height: 100%;
+     margin: 0;
+     font-family: 'Nunito Sans', sans-serif;}
+h1, h2, button, p, input, a, ul, li, footer, header{font-family: 'Nunito Sans', sans-serif;}
+#inicio {margin-top: 100px;}
 .container {
     margin: 0 auto;
     position: relative;
     height: 100%;}
-.headercontainer {
-    width: 100%;}
+.headercontainer {width: 100%;}
 .header_main {
     display: block;
     background-color: rgb(70, 71, 73);}
 .logo {
     width: 55%;
-    margin-top: 6px;
-    margin-left: 3%;}
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;}
+.header-mensaje{
+  width: 8%;
+  margin-top: 6px;
+  margin-left: 90px;}
 .iconomenumobile {
     margin-top: 8px;
     margin-right: 8%;
     float: right;
     width: 15%;}
-.topnav {
-    display: none;}
-.sidenav {
-    display: inline-block;}
+.topnav {display: none;}
+.sidenav {display: inline-block;}
 /* The side navigation menu */
 .sidenav {
     height: 100%;
@@ -52,13 +58,11 @@ body {
     padding-top: 60px;
     /* Place content 60px from the top */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
-}
+    /* 0.5 second transition effect to slide in the sidenav */}
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -80,7 +84,6 @@ body {
     padding: 20px;}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 /*INICIO*/
-
 .inicio {
     width: 100%;
     overflow: hidden;}
@@ -91,10 +94,8 @@ body {
 .inicio2 {
     width: 100%;
     position: relative;}
-.mobile1 {
-    width: 100%;}
-.mobile2 {
-    width: 100%;}
+.mobile1 {width: 100%;}
+.mobile2 {width: 100%;}
 .boton-llevame {
     position: absolute;
     left: 7%;
@@ -119,38 +120,27 @@ body {
     border-width: 3px;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0);}
-.flecha {
-  display: none;}
-
+.flecha {display: none;}
 /*QUIENES SOMOS*/
 .container-quienes {
   width: 100%;
   background-color:#00f07f;
-  color: white;
-  font-family: 'Nunito Sans', sans-serif;
-}
+  color: white;}
 .quienes-texto {
   width: 100%;
   font-size: 2rem;
-  padding: 20px;
-}
+  padding: 20px;}
 .quienes-texto h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-style: oblique;
-}
+  font-style: oblique;}
 .quienes-texto .titulo img {
   width: 80%;
-  margin-left: 25px;
-}
-.quienes-texto .informacion {
-  font-size: 1rem;
-}
+  margin-left: 25px;}
+.quienes-texto .informacion {font-size: 1rem;}
 .quienes-imagen {display: none;}
 /*FAQS*/
-
-.img-faqs {
-    display: none;}
+.img-faqs {display: none;}
 .preg-container {
     width: 100%;
     background-color: #808080;
@@ -161,13 +151,11 @@ body {
     display: block;
     margin-top: 37px;
     margin-left: 31px;
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     left: 5%;
     top: 3%;
     font-size: 2rem;}
 .h2-preg {
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     color: #42f471;
     margin-top: 5%;
@@ -178,20 +166,16 @@ body {
     margin: 5%;}
 .preg p {
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     padding-right: 12%;}
 .preg-1 {
     width: 100%;
-    margin: 5%;
-    font-family: 'Nunito Sans', sans-serif;}
+    margin: 5%;}
 .preg-1 p {
     padding-right: 12%;
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;}
 /*AYUDA*/
-
 .help-container {
     width: 100%;
     margin-top: 50px;}
@@ -203,21 +187,15 @@ body {
     padding-bottom: 10px;}
 .h1-ayuda {
     color: #514d49;
-    font-weight: bold;
-    font-family: 'Nunito Sans', sans-serif;}
+    font-weight: bold;}
 .h2-ayuda {
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     color: #42f471;
     margin-top: 2%;}
-.grafico {
-    width: 100%;}
-.grafico-img {
-    width: 100%;}
-.grafico-web {
-    display: none;}
+.grafico {width: 100%;}
+.grafico-img {width: 100%;}
+.grafico-web {display: none;}
 /*REGISTRARSE*/
-
 .form-registrarse {
     width: 26.65%;
     right: 37%;
@@ -226,7 +204,6 @@ body {
     z-index: 10;
     background-color: white;
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
     margin-top: 142px;}
 .h1-cuenta {
     font-size: 1rem;
@@ -236,8 +213,7 @@ body {
     padding-bottom: 4%;
     color: black;}
 .foto-perfil {
-    color: black;
-    font-family: 'Nunito Sans', sans-serif;}
+    color: black;}
 .form-control {} .input-checkbox-cuenta {
     margin: 0;
     vertical-align: text-bottom;}
@@ -256,18 +232,15 @@ body {
     color: #808080;}
 .termino-condiciones {
     color: #808080;
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 0.7rem;
     text-decoration: underline;}
 /*LOG IN*/
-
 .form-login {
     width: 26.65%;
     text-align: center;
     float: right;
     background-color: #808080;
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
     margin-top: 100px;
     position: absolute;
     z-index: 6;
@@ -301,7 +274,6 @@ body {
     color: #42f471;
     margin: 0;}
 /*PERFIL WEB*/
-
 form.completar-perfil-web {display: none;}
 /*FEED*/
 *{box-sizing: border-box;}
@@ -316,14 +288,11 @@ form.completar-perfil-web {display: none;}
     width: 100%;
     margin: 0 auto;
     margin-top: 56px;
-    background-color: white;
-  }
+    background-color: white;}
 .llevame-botones {
     width: 100%;
     margin-bottom: 5%;}
-.llevame-botones a {
-  text-decoration: none;
-}
+.llevame-botones a {text-decoration: none;}
 .llevame-botones .b1 {
     width: 45%;
     margin-bottom: 5%;
@@ -331,9 +300,8 @@ form.completar-perfil-web {display: none;}
     color: #00f07f;
     font-weight: bold;
     border-style: none;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     padding-top: 2%;
-    font-family:'Nunito Sans', sans-serif;
     padding-left: 8%;
     padding-top: 0%;}
 .llevame-botones .b2 {
@@ -343,11 +311,9 @@ form.completar-perfil-web {display: none;}
     color: white;
     font-weight: bold;
     border-style: none;
-    font-size: 1.3rem;
-    font-family:'Nunito Sans', sans-serif;
+    font-size: 1.8rem;
     padding-left: 15%;}
 .llevame-blanco p {
-    font-family:'Nunito Sans', sans-serif;
     margin: 0;
     color: white;}
 .llevame-blanco .posteo {
@@ -364,14 +330,10 @@ form.completar-perfil-web {display: none;}
     width: 100%;
     border-radius: 50%;
     margin-left: 10%;}
-.fotoperfil .foto2{
-    width: 22%;
-    margin-left: 35%;}
-.fotoperfil .foto3 {
-    width: 22%;}
 .info-Feed-misViajes {
     width: 60%;
-    float: left;}
+    float: left;
+    margin-left: 9px;}
 .info-Feed-misViajes .usuario {
     font-size: 1.1rem;
     padding-top: 4%;}
@@ -382,20 +344,20 @@ form.completar-perfil-web {display: none;}
     width: 100%;}
 .info-Feed-misViajes .origen p {
     font-size: 1.1rem;
-    margin-left: 8%;}
-.info-Feed-misViajes .origen img {
-    width: 6%;
-    float: left;
-    margin-top: 2%;}
+    margin-left: 10%;}
+.posteo-icono{
+  width: 19%;
+  position: relative;}
+.posteo-icono img {
+  width: 100%;
+  float: left;
+  position: absolute;
+  right: 12px;}
 .info-Feed-misViajes .destino {
     width: 100%;}
 .info-Feed-misViajes .destino p {
     font-size: 1.1rem;
-    margin-left: 8%;}
-.info-Feed-misViajes .destino img {
-    width: 6%;
-    float: left;
-    margin-top: 2%;}
+    margin-left: 10%;}
 .posteo .fecha-hora {
     border-top: 1px solid #fff;
     border-bottom:  1px solid #fff;
@@ -424,49 +386,40 @@ form.completar-perfil-web {display: none;}
     background-color: #606060;
     float: right;
     text-align: center;
-    padding-top: 1%;}
+    padding-top: 3px;
+    padding-bottom: 3px;}
 .opciones-Feed-misViajes .img1{
     width: 55%;}
-.opciones-Feed-misViajes .img2 {
-    width: 55%;
-    clear: both;}
 .opciones-Feed-misViajes .img3 {
     width: 55%;
     clear: both;}
-
 /*MIS VIAJES*/
 .container-misViajes-Mobile, .container-misViajes, {
     width: 100%;
-    font-family:'Nunito Sans', sans-serif;
     margin: 0 auto;
     color: #808080;
-    background-color: white;
-}
+    background-color: white;}
 .container-misViajes-Mobile .form-misViajes {
   width: 100%;
     margin: 0 auto;
     background-color: white;
     padding-left: 2%;
     padding-right: 2%;
-    margin-top: 58px;
-}
-
+    margin-top: 58px;}
 .form-misViajes {
     width: 100%;
     margin: 0 auto;
     background-color: white;
     padding-left: 2%;
-    padding-right: 2%;
-  }
+    padding-right: 2%;}
 .titulo-misViajes p {
   color: grey;
   float: left;
   padding-top: 1%;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 1%
-  font-family: 'Nunito Sans', sans-serif;
-}
+  margin-left: 1%;
+  font-size: 1.2em;}
 .titulo-misViajes img{
   width: 8%;
   float: left;
@@ -476,46 +429,45 @@ form.completar-perfil-web {display: none;}
   overflow: hidden;
   width: 100%;
   border-top: 1px solid grey;
-  padding-bottom: 3%;
-}
+  padding-bottom: 3%;}
 .posteo-misViajes .flecha-verde-gris img {
   width: 9%;
   float: left;
   margin-right: 4%;
-  padding-top: 3%;
-}
+  padding-top: 3%;}
 .posteo-misViajes .info {
   width: 60%;
   float: left;
-  font-size: 0.7rem;
-}
+  font-size: 0.7rem;}
 .posteo-misViajes p {
   color: #808080;
-  font-family: 'Nunito Sans', sans-serif;
-  margin: 0
-}
+  margin: 0;}
 .fecha-hora-misViajes {
   border-top: 1px solid grey;
   border-bottom:  1px solid grey;
   padding-bottom: 1%;
   padding-top: 1%;
-  width: 117%;
-}
+  width: 117%;}
+  .misviajes-icono{
+    width: 19%;
+    position: relative;}
+  .misviajes-icono img {
+    width: 100%;
+    float: left;
+    position: absolute;
+    right: 12px;}
 .adicionales-misViajes{
   border-bottom: 1px solid grey;
   overflow: hidden;
   width: 117%;
   padding-top: 2%;
-  padding-bottom: 2%;
-}
+  padding-bottom: 2%;}
 .adicionales-misViajes img {
   width: 6%;
   float: left;
-  margin-right: 1%;
-}
+  margin-right: 1%;}
 .opciones-Feed-misViajes .img4 { width: 55%;}
 .PRUEBA {display: none;}
-
 /*MIS VIAJES REALIZADOS*/
 .form-misViajes-Realizados {
     width: 100%;
@@ -524,21 +476,16 @@ form.completar-perfil-web {display: none;}
     padding-left: 2%;
     padding-right: 2%;
     margin-top:10px;
-  }
+    margin-bottom: 10px;}
 #adicional-status {
   color: #00f07f;
-  font-weight: bold;
-}
- /*MENSAJES*/
- .container-mensajes-web {
-   display: none;
- }
+  font-weight: bold;}
+/*MENSAJES*/
+ .container-mensajes-web {display: none;}
  .container-mensajes {
    width: 100%;
    margin: 0 auto;
-   font-family:'Nunito Sans', sans-serif;
-   margin-top: 58px;
- }
+   margin-top: 58px;}
  .mensajes{
    width: 100%;
    float: left;
@@ -547,71 +494,50 @@ form.completar-perfil-web {display: none;}
    padding-left: 2%;
    padding-right: 2%;
    color: grey;
-   padding-bottom: 2%;
- }
+   padding-bottom: 2%;}
  .titulo-mensajes {
-   border-bottom: 2px solid grey;
- }
+   border-bottom: 2px solid grey;}
  .titulo-mensajes img {
    display: inline-block;
    width: 8%;
-   float: left;
- }
+   float: left;}
  .titulo-mensajes p {
    margin-top: 0px;
    margin-bottom: 0;
    margin-left: 13%;
-   padding-top: 4px;
- }
+   padding-top: 4px;}
  .mensaje-info {
    border-bottom: 1px solid grey;
    overflow: hidden;
    border-top: 1px solid grey;
    margin-top: 15px;
-   padding-bottom: 10px;
- }
+   padding-bottom: 10px;}
  .mensaje-foto {
    width: 20%;
    float: left;
-   padding-top: 10px;
- }
+   padding-top: 10px;}
  .mensaje-foto img {
    width: 75%;
    float: left;
    margin-right: 4%;
    padding-top: 3%;
-   border-radius: 50%;
- }
+   border-radius: 50%;}
  .mensaje-texto  {
    width: 70%;
    float: left;
-   padding-top: 10px;
- }
+   padding-top: 10px;}
  .mensaje-texto p {
   margin:0;
   font-size: 0.7rem;
-  padding-top: 2px;
- }
- .mensaje-texto .usuario {
-   font-weight: bold;
- }
-
+  padding-top: 2px;}
+ .mensaje-texto .usuario {font-weight: bold;}
 .mensaje-opciones {
   width: 10%;
   float: right;
-  background-color: grey;
-}
+  background-color: grey;}
 .mensaje-opciones img {
-  width: 80%;
-}
-
-/*LLEVAR*/
-  *{box-sizing: border-box;}
-  html, body, ul {
-   margin: 0;
-   border: 0;
-   padding: 0;
-   overflow-x: hidden;}
+  width: 80%;}
+  /*LLEVAR*/
    .llevar a {text-decoration: none;}
   .contenedor-llevame{
    background-color: white;
@@ -623,14 +549,11 @@ form.completar-perfil-web {display: none;}
    width: 100%;
    margin: 0 auto;
    background-color: white;
-   margin-bottom: 40px;
-   }
+   margin-bottom: 40px;}
    .llevar label{
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    font-size: 1.3em;
    color: #00f07f;}
-
    .llevar input {
    padding: 8px;
    border-style: solid;
@@ -639,16 +562,14 @@ form.completar-perfil-web {display: none;}
    font-size: 1em;
    position: relative;
    padding-left: 50px;
-   width: 100%;
-   }
+   width: 100%;}
  .formulario-llevar{
    padding-left: 3%;
    padding-right: 3%;
- }
+   position: relative;}
 .botones-llevar {
   width: 100%;
-  margin-bottom: 5%;
-}
+  margin-bottom: 5%;}
    .botones-llevar .b1{
     width: 45%;
     background-color: #00f07f;
@@ -656,27 +577,20 @@ form.completar-perfil-web {display: none;}
     font-weight: bold;
     border-style: none;
     font-size: 1.3rem;
-    font-family: 'Nunito Sans', sans-serif;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 0%;
-    }
-
-  .botones-llevar .b2{
+    padding-top: 0%;}
+.botones-llevar .b2{
     width: 45%;
     background-color: white;
     color:  #00f07f;
     font-weight: bold;
     border-style: none;
     font-size: 1.3em;
-    padding-left: 15%;
-    font-family: 'Nunito Sans', sans-serif;
-     }
-
+    padding-left: 15%;}
    .formulario-llevar button{
    margin-left: 57px;
    margin-top: 30px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    font-size: 2em;
    color: white;
@@ -692,77 +606,24 @@ form.completar-perfil-web {display: none;}
    position: absolute;
    z-index: 22;
    margin-top: 8px;
-   margin-left: 10px;
-   }
-
+   margin-left: 10px;}
    input[type="time"]:before {
    content: attr(placeholder) !important;
    color: grey;
    font-family: 'Nunito Sans', sans-serif;
-   margin-right: 0.5em;
- }
-
-   input[type="date"]:before {
+   margin-right: 0.5em;}
+    input[type="date"]:before {
    content: attr(placeholder) !important;
    color: grey;
    font-family: 'Nunito Sans', sans-serif;
-   margin-right: 0.5em;
- }
+   margin-right: 0.5em;}
 ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
 ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
-}
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {color: transparent;}
  .origen, .destino, .horario, .fecha, .pasajeros {margin-bottom: 3%;}
-
  /*BUSCAR-WEB*/
- form.buscar-web{
-  display: none;
-}
-  /*form.buscar-web{
-  display: none;
-  width: 100%;
-  margin: 0 auto;
-  background-color: white;
-  margin-bottom: 10px;
-  overflow: hidden;
-  }
-  .buscar-web input {
-  padding: 5px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #00f07f;
-  font-size: 0.8em;
-  position: relative;
-  padding-left: 50px;
-  width: 100%;}
-  .formulario-buscar-web button{
-   width: 7%;
-   font-family: 'Nunito Sans', sans-serif;
-   font-weight: bold;
-   font-size: 0.8em;
-   color: white;
-   float: right;
-   padding-top: 3px;
-   padding-bottom: 3px;
-   padding-left: 7px;
-   background-color: #00f07f;
-   border-style: none;
-   margin-bottom: 20px;}
- .formulario-buscar-web{
-   padding-left: 3%;
-   padding-right: 3%;
-   position: relative;}
-  .buscar-web img{
-   width: 21px;
-   position: absolute;
-   z-index: 22;
-   margin-top: 4px;
-   margin-left: 10px;}
-
-  .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
-*/
-  /*BUSCAR-MOBILE*/
+ form.buscar-web{display: none;}
+/*BUSCAR-MOBILE*/
    form.buscar-mobile{
    width: 100%;
    margin: 0 auto;
@@ -787,7 +648,6 @@ form.completar-perfil-web {display: none;}
    .formulario-buscar button{
    width: 100%;
    margin-top: 20px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    font-size: 0.8em;
    color: white;
@@ -804,22 +664,33 @@ form.completar-perfil-web {display: none;}
    z-index: 22;
    margin-top: 4px;
    margin-left: 10px;}
-
    .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
-
-
   /*COMPLETAR PERFIL*/
-    *{box-sizing: border-box;}
-   html, body, ul {
-   margin: 0;
-   border: 0;
-   padding: 0;
-   overflow-x: hidden;}
    .contenedor-perfil{
    max-width: 100%;
    margin: 0 auto;
    overflow: hidden;
    background-color: grey;}
+   .boton-editar {
+   clear: both;
+   float: right;
+   width: 50%;
+   position: relative;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   right: 30px;}
+   button#boton-editar-perfil {
+   background-color: rgb(64, 64, 65);
+   font-size: 0.8em;
+   margin:0;
+   position: absolute;
+   bottom: 10px;
+   padding: 5px 9px;}
+   img#imagen-editar-cuenta{
+     width: 33px;
+     position: absolute;
+     bottom: 7px;
+     left: 85px;}
    form.completar-perfil{
    width: 100%;
    margin: 0 auto;
@@ -835,15 +706,14 @@ form.completar-perfil-web {display: none;}
    background-color: black;
    font-size: 1em;
    position: relative;
-   padding-left: 50px;
-   width: 100%;}
+   width: 89%;}
    .formulario-perfil{
    padding-left: 3%;
-   padding-right: 3%;}
+   padding-right: 3%;
+   position: relative;}
    .formulario-perfil button{
-   margin-left: 30%;
+   margin-left: 97px;
    margin-top: 30px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    font-size: 1em;
    color: white;
@@ -855,12 +725,8 @@ form.completar-perfil-web {display: none;}
    border-style: none;
    margin-bottom: 30px;}
    .formulario-perfil img{
-   width: 23px;
-   position: absolute;
-   z-index: 22;
-   margin-top: 5px;
-   margin-left: 10px;
-   }
+   width: 8%;
+   margin-left: 3px;}
    .h2-perfil{
    font-size: 2em;
    color: #00f07f;
@@ -868,7 +734,6 @@ form.completar-perfil-web {display: none;}
    border-bottom-color: #00f07f;
    border-bottom-style: solid;
    border-bottom-width: 2px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    padding-top: 20px;}
    .h1-perfil{
@@ -884,7 +749,6 @@ form.completar-perfil-web {display: none;}
    border-top-style: solid;
    border-bottom-width: 1px;
    border-top-width: 1px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    clear: both;}
    input#nombre-completado.form-completar-perfil{
@@ -901,7 +765,7 @@ form.completar-perfil-web {display: none;}
    position: absolute;
    margin-top: 40px;}
    input#subir-foto-usuario{
-   width: 195px;
+   width: 87px;
    margin-top: 25%;
    font-size: 0.8em;
    margin-left: 12px;
@@ -922,14 +786,7 @@ form.completar-perfil-web {display: none;}
    float: left;
    margin-bottom: 45px;}
    .completar-trabajo, .completar-nacimiento, .completar-direccion, .completar-lugar-nac, .completar-profesion, .completar-estudio, .completar-musica, .completar-hobbies {margin-bottom: 3%;}
-
-     /*CAMBIAR CUENTA*/
-   *{box-sizing: border-box;}
-   html, body, ul {
-   margin: 0;
-   border: 0;
-   padding: 0;
-   overflow-x: hidden;}
+/*CAMBIAR CUENTA*/
    .contenedor-cuenta{
    max-width: 100%;
    margin: 0 auto;
@@ -957,7 +814,6 @@ form.completar-perfil-web {display: none;}
    .formulario-cuenta button{
    margin-left: 27%;
    margin-top: 30px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    font-size: 1em;
    color: white;
@@ -967,7 +823,7 @@ form.completar-perfil-web {display: none;}
    padding-right: 18px;
    background-color: #00f07f;
    border-style: none;
-   margin-bottom: 30px;}
+   margin-bottom: 25px;}
    .h2-cuenta{
    font-size: 2em;
    color: white;
@@ -975,7 +831,6 @@ form.completar-perfil-web {display: none;}
    border-bottom-color: white;
    border-bottom-style: solid;
    border-bottom-width: 2px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    padding-top: 20px;}
    .h1-cuenta{
@@ -988,18 +843,25 @@ form.completar-perfil-web {display: none;}
    border-bottom-color: white;
    border-bottom-style: solid;
    border-bottom-width: 1px;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;}
-   button#cerrar-cuenta{
+   button#cerrar-sesion{
    border-style: none;
+   border-bottom-color: rgb(70, 71, 73);
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
    background-color: inherit;
-   color: lightgrey;
-   padding: 0;
-   margin-left: 0;
-   margin-top: 4px;}
+   color: rgb(70, 71, 73);
+   margin-left: 100px;
+   margin-bottom: 10px;}
+   button#cerrar-cuenta{
+     border-style: none;
+     background-color: inherit;
+     color: lightgrey;
+     margin-left: 87px;
+     margin-top: 15px;
+     margin-bottom: 22px;}
    .contraseña-actual, .contraseña-nueva, .confirmar-nueva, .mail-actual, .mail-nuevo, .confirmar-nuevo {margin-bottom: 3%;}
-
- /*MENU-FOOTER*/
+/*MENU-FOOTER*/
  .contenedor-menu-footer-mobile{
    max-width: 100%;
    margin: 0 auto;
@@ -1009,45 +871,33 @@ form.completar-perfil-web {display: none;}
     display: block;
     width: 100%;}
  .menu-footer-mobile {
-     background-color: black;
-     height: 60px;
+     background-color: rgb(70, 71, 73);
+     height: 52px;
      list-style: none}
- img#viajes-menu-footer.img-menu-footer{
-     width: 47px;
-     margin-top: 7px;}
  .img-menu-footer{
-   width: 30px;
+   width: 25px;
    display: inline-block;
    float: left;
    margin-top: 15px;}
-   .img-menu-footer:last-child{
-     margin-right: 15px;
-   }
-   .img-menu-footer:first-child{
-     margin-left: 15px;
-   }
-
+   .img-menu-footer:last-child{margin-right: 20px;}
+   .img-menu-footer:first-child{margin-left: 19px;}
 /*FOOTER*/
 footer {
     background-color: rgb(27, 23, 24);
-    height: 428px;
-}
+    height: 428px;}
 footer .contacto {
-    height: 35%;
-}
+    height: 35%;}
 footer .contacto div {
     position: absolute;
     font-size: 13px;
     height: 100%;
     width: 100%;
-    text-align: center;
-}
+    text-align: center;}
 footer .contacto .titulo {
     font-size: 35px;
     font-weight: bold;
     color: #00f07f;
-    margin: 15px 0px 0px 0px;
-}
+    margin: 15px 0px 0px 0px;}
 footer .menu-footer ul li p {
     margin: 0;
     color: white;
@@ -1055,99 +905,71 @@ footer .menu-footer ul li p {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 15px;
-    text-align: center;
-}
+    text-align: center;}
 footer .menu-footer ul {
     position: absolute;
     margin-left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
-}
+    bottom: 0;}
 footer div {
     display: block;
     position: relative;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     width: 100%;
-    height: 21.66666%;
-}
+    height: 21.66666%;}
 footer .logo-footer img {
     position: absolute;
     transform: translateY(-50%);
     margin-top: 12px;
     width: 50%;
     left: 24%;
-    top: 36%;
-}
+    top: 36%;}
 footer .sn-footer ul {
     position: absolute;
     margin-left: 45%;
     margin-top: 5%;
-    transform: translateX(-50%);
-}
+    transform: translateX(-50%);}
 footer .sn-footer ul li img {
     height: 50px;
-    margin-top: 60%;
-}
-footer .sn-footer ul li {
-    float: left;
-}
-footer div ul {
-    list-style-type: none;
-}
+    margin-top: 60%;}
+footer .sn-footer ul li {float: left;}
+footer div ul {list-style-type: none;}
 .container-footer-interior {display: none;}
-
 /*MEDIAS QUERIES*/
-
 @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
     .headercontainer {
-        height: 100px;
-        position: fixed;
-    }
+        position: fixed;}
     .header_main {
         position: relative;
-        height: 100%;
         display: block;
-        background-color: rgb(70, 71, 73);
-    }
+        background-color: rgb(70, 71, 73);}
 }
 @media (min-width: 480px) {
-    .iconomenumobile {
-        margin-top: 3%;}
-    /*INICIO*/
+    .iconomenumobile {margin-top: 3%;}
+/*HEADER*/
+    .header-mensaje{
+      width: 8%;
+      margin-top: 6px;
+      margin-left: 140px;}
+/*INICIO*/
     .inicio1 {} .inicio2 {} .boton-llevame {
         left: 14%;
         bottom: 10%;}
     .boton-llevar {
         left: 59%;
         bottom: 10%;}
-    .flecha {
-      display: none;}
-
-    /*FAQS*/
-    .h1-faqs {
-        top: 5%;}
-    /*AYUDA*/
-    .h1-ayuda {
-        font-size: 1.6rem;}
-    .h2-ayuda {
-        font-size: 1.4rem;}
-  /*FEED*/
-    .llevame-botones {
-      padding-top: 24px;
-    }
-    .llevame-botones .b1 {
-      padding-left: 12%;
-    }
-    .llevame-botones .b2 {
-      padding-left: 20%;
-    }
+    .flecha {display: none;}
+/*FAQS*/
+    .h1-faqs {top: 5%;}
+/*AYUDA*/
+    .h1-ayuda {font-size: 1.6rem;}
+    .h2-ayuda {font-size: 1.4rem;}
+/*FEED*/
+    .llevame-botones {padding-top: 24px;}
+    .llevame-botones .b1 {padding-left: 12%;}
+    .llevame-botones .b2 {padding-left: 20%;}
     .container-misViajes {display: none;}
     .info-Feed-misViajes .usaurio {font-size: 0.8rem;}
     .info-Feed-misViajes .dia {font-size: 1.5rem;}
@@ -1160,74 +982,50 @@ footer div ul {
     .info-Feed-misViajes .espacio-disponible {font-size: 1rem;}
     .info-Feed-misViajes .precio {font-size: 1rem;}
     .opciones-Feed-misViajes .img1 {width: 50%;}
-    .opciones-Feed-misViajes .img2 {width: 50%;}
     .opciones-Feed-misViajes .img3 {width: 50%;}
-
-  /*MIS VIAJES*/
+/*MIS VIAJES*/
     .posteo-misViajes .adicionales-misViajes img {margin-right: 1%;}
-    .fecha-hora-misViajes {
-      padding-bottom: 2%;
-    }
+    .fecha-hora-misViajes {padding-bottom: 2%;}
     .titulo-misViajes p {
       font-size: 1.1rem;
-      padding-top: 2%;
-    }
+      padding-top: 2%;}
   /*LLEVAR*/
     .botones-llevar .b1 {
       padding-left: 12%;
-      padding-right: 12%;
-    }
-    .botones-llevar .b2 {
-      padding-left: 20%;
-    }
+      padding-right: 12%;}
+    .botones-llevar .b2 {padding-left: 20%;}
     /*BUSCAR-MOBILE*/
     form.buscar-mobile{margin-top: 120px;}
     .buscar-mobile button{margin-top: 5px;}
-
-    /*COMPLETAR PERFIL*/
+/*COMPLETAR PERFIL*/
     input#nombre-completado.form-completar-perfil {width: 327px;}
     input#apellido-completado.form-completar-perfil {width: 327px;}
     input#subir-foto-usuario{margin-top: 17%;}
-
-    /*CAMBIAR CUENTA*/
-    .formulario-cuenta button {
-      margin-left: 8%;}
-    .formulario-cuenta {
-        margin-top: 84px;}
-
-  /*MENU MOBILE FOOTER*/
-  .img-menu-footer:first-child {margin-left: 31px;}
-  .img-menu-footer:last-child {margin-right: 31px;}
+/*CAMBIAR CUENTA*/
+    .formulario-cuenta button {margin-left: 8%;}
+    .formulario-cuenta {margin-top: 84px;}
+/*MENU MOBILE FOOTER*/
+  .img-menu-footer:first-child {margin-left: 33px;}
+  .img-menu-footer:last-child {margin-right: 33px;}
 /*MENSAJES*/
-   .titulo-mensajes {
-     padding-bottom: 5px;
-   }
+   .titulo-mensajes {padding-bottom: 5px;}
    .titulo-mensajes p {
      font-size: 1.4rem;
      margin-left: 10%;
-     padding-top: 4px;
-   }
-   .titulo-mensajes img {
-     width: 8%;
-   }
-   .mensaje-texto p {
-     font-size: 1rem;
-   }
-   .mensaje-texto img {
-     margin-left: 4%;
-   }
-
-
-
+     padding-top: 4px;}
+   .titulo-mensajes img {width: 8%;}
+   .mensaje-texto p {font-size: 1rem;}
+   .mensaje-texto img {margin-left: 4%;}
 }
-
 @media (min-width: 768px) {
     /*HEADER*/
-
     .iconomenumobile {display: none;}
     .logo {
         width: 23%;
         margin-top: 2%;}
+    .header-mensaje{
+      width: 5%;
+      margin-top: 15px;}
     /* The side navigation menu */
     .sidenav {display: none;}
     .topnav {
@@ -1235,46 +1033,35 @@ footer div ul {
         position: relative;
         float: right;
         margin-top: 4%;
-        margin-right: 5%;
-    }
+        margin-right: 5%;}
     .topnav a {
         color: #f2f2f2;
-        font-family: 'Open Sans', sans-serif;
         text-align: center;
         padding: 15px 10px;
         text-decoration: none;
-        font-size: 18px;
-    }
+        font-size: 18px;}
     .topnav a:hover {
         background-color: #ddd;
-        color: black;
-    }
+        color: black;}
     .topnav a.active {
         background-color: #4CAF50;
-        color: white;
-    }
+        color: white;}
     .headercontainer {
-        height: 100px;
-        position: fixed;
-    }
+        position: fixed;}
     .header_main {
         position: relative;
-        height: 80%;
         display: block;
-        background-color: rgb(70, 71, 73);
-    }
+        background-color: rgb(70, 71, 73);}
     /*INICIO*/
     .inicio {margin-bottom: 25px;}
     .inicio1 {
         width: 49%;
         float: left;
-        padding-top: 10px;
-    }
+        padding-top: 10px;}
     .inicio2 {
         width: 49%;
         float: right;
-        padding-top: 10px;
-    }
+        padding-top: 10px;}
     .boton-llevame {
         left: 11%;
         bottom: 10%;
@@ -1284,8 +1071,7 @@ footer div ul {
         border-color: #fff;
         border-width: 5px;
         border-style: solid;
-        background-color: #fff;
-    }
+        background-color: #fff;}
     .boton-llevar {
         left: 58%;
         bottom: 10%;
@@ -1300,18 +1086,14 @@ footer div ul {
     .inicio-flecha{clear: both;}
     .flecha {
       display: inline-block;
-      width: 15%;
-      margin-left: 42.5%;
-      margin-top: 3%;
-    }
+      width: 10%;
+      margin-left: 45%;
+      margin-top: 20px;}
     /*QUIENES SOMOS*/
-    .container-quienes {
-      overflow: hidden;
-    }
+    .container-quienes {overflow: hidden;}
     .quienes-texto {
       width: 30%;
-      float: left;
-    }
+      float: left;}
     .quienes-texto h2 {
     font-size: 1.4rem;}
     .quienes-texto .informacion p {
@@ -1324,15 +1106,11 @@ footer div ul {
       margin-top: 20px;
       margin-right: 20px;
       margin-bottom: 20px;
-      position: relative;
-    }
+      position: relative;}
     .quienes-texto .titulo img {
       width: 62%;
-      margin-left: 25px;
-    }
-    .quienes-imagen img {
-      width: 100%;
-    }
+      margin-left: 25px;}
+    .quienes-imagen img {width: 100%;}
     .texto-sobreImagen {
       width: 50%;
       float: right;
@@ -1341,69 +1119,52 @@ footer div ul {
       left: 50%;
       height: 100%;
       text-align: center;
-      padding-top: 20px;
-    }
+      padding-top: 20px;}
     .texto-sobreImagen p {
       margin: 0;
-      font-family:
-      font-weight: bold;
-    }
-
+      font-weight: bold;}
     .texto-sobreImagen button {
       margin-top: 80px;
       background-color: transparent;
       border: 1px solid white;
       font-weight: bold;
       color: white;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 1rem;
-    }
+      font-size: 1rem;}
     /*FAQS*/
-
     .img-faqs {
         display: inline-block;
         width: 84%;
         text-align: center;
-        margin-left: 4%;
-    }
+        margin-left: 4%;}
     .h1-faqs {
         left: 3%;
         top: 7%;
-        margin-top: 55px;
-    }
+        margin-top: 55px;}
     /*AYUDA*/
-
     .preg1-2 {
         width: 30%;
         float: left;
-        margin-left: 10px;
-    }
+        margin-left: 10px;}
     .preg-container h2 {
-        font-size: 18px;
-    }
+        font-size: 18px;}
     .preg-container p {
-        font-size: 12px;
-    }
+        font-size: 12px;}
     .preg3-4 {
         width: 30%;
         float: left;
-        margin-left: 2%;
-    }
+        margin-left: 2%;}
     .preg5-img {
         width: 30%;
         float: left;
         margin-right: 10px;
-        margin-left: 5%;
-    }
+        margin-left: 5%;}
     .grafico-img {
-        display: none;
-    }
+        display: none;}
     .grafico-web {
         display: inline-block;
         width: 85%;
         padding-left: 15%;
-        padding-bottom: 5%;
-    }
+        padding-bottom: 5%;}
     .h1-ayuda {
         font-size: 2rem;
         text-align: center;}
@@ -1414,8 +1175,7 @@ footer div ul {
         margin: 0%;
         margin-top: 0px;
         padding-top: 0px;}
-
-    /*FEED*/
+   /*FEED*/
     .container-misViajes {display: none;}
     .contianer-feed {width: 100%;}
     .llevame-blanco .b1 {
@@ -1425,11 +1185,6 @@ footer div ul {
     .llevame-botones .b2 {padding-left: 20%;}
     .info-Feed-misViajes {width: 66%;}
     .fotoperfil .foto1 {margin-left: 11%;}
-    .posteo .foto2 {
-        width: 20%;
-        margin-top: 6%;
-        margin-left: 38%;}
-    .posteo .foto3 {width: 20%; margin-top: 4%;}
     .info-Feed-misViajes .usuario {font-size: 1.5rem;}
     .info-Feed-misViajes .dia {font-size: 2.2rem;}
     .info-Feed-misViajes .origen p {
@@ -1445,8 +1200,7 @@ footer div ul {
         width: 4%;
         margin-top: 3px;}
     .info-Feed-misViajes .destino {
-      margin:0;
-    }
+      margin:0;}
     .info-Feed-misViajes .destino p {
         font-size: 1.7rem;
         margin-left: 6%;}
@@ -1455,22 +1209,13 @@ footer div ul {
     .info-Feed-misViajes .precio {font-size: 1.5rem;}
     .opciones-Feed-misViajes {width: 8%;}
     .opciones-Feed-misViajes .img1 {width: 48%;}
-    .opciones-Feed-misViajes .img2 {width: 48%;}
     .opciones-Feed-misViajes .img3 {width: 48%;}
-
     /*MIS VIAJES*/
-    .titulo-misViajes p {
-      font-size: 1.8rem;
-    }
+    .titulo-misViajes p {font-size: 1.8rem;}
     .opciones-Feed-misViajes .img4 {width: 48%;}
-
     /*LLEVAR*/
-    .botones-llevar .b1 {
-      font-size: 2em;
-    }
-    .botones-llevar .b2 {
-      font-size: 2em;
-    }
+    .botones-llevar .b1 {font-size: 2em;}
+    .botones-llevar .b2 {font-size: 2em;}
     .formulario-llevar{margin: 0 auto;}
     .formulario-llevar label{font-size: 1.5em;}
     .formulario-llevar input {font-size: 1em;}
@@ -1511,7 +1256,6 @@ footer div ul {
         float: left;
         margin-left: 50px;
         margin-top: 20px;}
-
    /*BUSCAR-MOBILE*/
     .buscar-mobile input {
         padding: 5px;
@@ -1550,12 +1294,16 @@ footer div ul {
         width: 12px;
         margin-top: 4.5px;
         margin-left: 8px;}
-
-      /*COMPLETAR PERFIL*/
+    /*COMPLETAR PERFIL*/
     input#nombre-completado.form-completar-perfil {width: 327px;margin-left: 150px;}
     input#apellido-completado.form-completar-perfil {width: 327px;margin-left: 150px;}
     input#subir-foto-usuario{margin-top: 13%;margin-left: 3%;}
     form.completar-perfil{margin-top: 80px;}
+    .formulario-perfil img{width: 4%;}
+    .completar-perfil input{width: 95%;}
+    .boton-editar{
+    right: 0;
+    margin-top: 0;}
     #circulo-perfil-foto {
       width: 100px;
       height: 100px;
@@ -1563,31 +1311,16 @@ footer div ul {
       border-radius: 50px;
       margin-bottom: 45px;}
     .formulario-perfil button{margin-left:40%;}
-
     /*CAMBIAR CUENTA*/
     .formulario-cuenta button{margin-left:25%;}
-
     /*MENSAJES*/
-    .titulo-mensajes {
-    }
-    .titulo-mensajes img {
-      width: 6%;
-    }
-    .titulo-mensajes p{
-      font-size: 1.8rem;
-    }
-    .mensaje-texto p {
-      font-size: 1.5rem;
-    }
+    .titulo-mensajes img {width: 6%;}
+    .titulo-mensajes p{font-size: 1.8rem;}
+    .mensaje-texto p {font-size: 1.5rem;}
     /*MENU MOBILE FOOTER*/
-    .img-menu-footer:first-child {
-        margin-left: 60px;
-      }
-    .img-menu-footer:last-child {
-        margin-right: 60px;
-      }
-
-    /*FOOTER*/
+    .img-menu-footer:first-child {margin-left: 60px;}
+    .img-menu-footer:last-child {margin-right: 60px;}
+   /*FOOTER*/
     footer {
         background-color: rgb(27, 23, 24);
         height: 200px;}
@@ -1623,7 +1356,6 @@ footer div ul {
         display: inline-block;
         position: relative;
         color: white;
-        font-family: 'Open Sans', sans-serif;
         width: 24%;
         height: 100%;}
     footer .logo-footer img {
@@ -1644,19 +1376,17 @@ footer div ul {
     /*HEADER*/
     .iconomenumobile {display: none;}
     .headercontainer {
-        height: 100px;
         position: fixed;}
     .header_main {
         position: relative;
-        height: 100%;
         display: block;
         background-color: rgb(70, 71, 73);}
     .logo {
         width: 25%;
         margin-top: 12px;
         margin-left: 3%;}
+    .header-mensaje{display: none;}
     /* The side navigation menu */
-
     .sidenav {display: none;}
     .topnav {
         display: inline-block;
@@ -1666,7 +1396,6 @@ footer div ul {
         margin-right: 6%;}
     .topnav a {
         color: #f2f2f2;
-        font-family: 'Open Sans', sans-serif;
         text-align: center;
         padding: 15px 10px;
         text-decoration: none;
@@ -1714,72 +1443,57 @@ footer div ul {
     .texto-sobreImagen button {font-size: 1.2rem; margin-top: 100px;}
     .texto-sobreImagen p {
       font-size: 1.3rem;}
-
-    /*FAQS*/
-
-    .preg-container h2 {font-size: 22px;}
-    .preg-container p {font-size: 15px;}
-    /*AYUDA*/
-
+/*FAQS*/
+  .preg-container h2 {font-size: 22px;}
+  .preg-container p {font-size: 15px;}
+/*AYUDA*/
     .grafico-mobile {display: none;}
     .h1-ayuda {font-size: 2.4rem;}
     .h1-ayuda {font-size: 2rem;}
-
-       /*LOG IN*/
-
+/*LOG IN*/
 .form-login {
     width: 26.65%;
     text-align: center;
     float: right;
     background-color: #808080;
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
     margin-top: 100px;
     position: absolute;
     z-index: 6;
     right: 0;}
-
-    /*FEED*/
-    .llevame-botones {
-      padding-top: 0;
-    }
+  /*FEED*/
+    .llevame-botones {padding-top: 0;}
     .container-feed {
      width: 100%
-     background-color: grey;
-        }
+     background-color: grey;}
     .llevame-blanco {
       width: 40%;
       float: left;
       margin: 0 auto;
       margin-left: 3%;
       margin-top: 120px;
-      background-color: white;
-    }
+      background-color: white;}
     .llevame-blanco .b1 {
       font-size: 1.6rem;
-      padding-left: 9%;
-    }
+      padding-left: 9%;}
     .llevame-blanco .b2 {
       font-size: 1.6rem;
-      padding-left: 15%;
-    }
+      padding-left: 15%;}
     .llevame-blanco .posteo {
       width: 95%;
       margin-left: 11px;
-      margin-bottom: 10px;
-    }
+      margin-bottom: 10px;}
+    .info-Feed-misViajes{margin-left: 0;}
+    .posteo-icono {width: 14%;}
     .info-Feed-misViajes .usuario {font-size: 1rem;}
     .info-Feed-misViajes .dia { font-size: 1.2rem;}
     .info-Feed-misViajes .origen {margin-bottom: 2%;}
     .info-Feed-misViajes .origen p {font-size: 1rem;}
-    .info-Feed-misViajes .origen img {margin-top: 2%;}
     .info-Feed-misViajes .destino p {font-size: 1rem;}
-    .info-Feed-misViajes .destino img {margin-top: 2%;}
     .info-Feed-misViajes .espacio-disponible {font-size: 0.9rem;}
     .info-Feed-misViajes .precio {font-size: 0.9rem;}
     .posteo .adicionales img {width: 6%;}
-
-     /*MIS VIAJES*/
+   /*MIS VIAJES*/
      .container-misViajes {
       display: inline-block;
       width: 22%;
@@ -1789,16 +1503,15 @@ footer div ul {
       background-color: white;}
     .titulo-misViajes p{
       font-size: 1.2rem;
-      margin-left: 2%;
-     }
+      margin-left: 2%;}
      .titulo-misViajes img { padding-top: 3%;}
      .fecha-hora-misViajes .dia {font-size: 1.1rem;}
+
      .fecha-hora-misViajes .origen p {font-size: 0.95rem;}
      .fecha-hora-misViajes .destino p {font-size: 0.95rem;}
      .adicionales-misViajes .espacio-disponible {font-size: 0.8rem;}
      .adicionales-misViajes .precio { font-size: 0.8rem;}
      .opciones-Feed-misViajes .img1 {width: 70%;}
-     .opciones-Feed-misViajes .img2 {width: 70%;}
      .opciones-Feed-misViajes .img3 {width: 70%;}
      .opciones-Feed-misViajes .img4 {width: 70%;}
 .PRUEBA {
@@ -1807,44 +1520,28 @@ footer div ul {
   float: left;
   margin-left: 5%;
   margin-top: 120px;
-  border: 1px solid red;
-}
+  border: 1px solid red;}
 .PRUEBA h1 {
   font-size: 2rem;
-  text-align: center;
-  font-family:'Nunito Sans', sans-serif;
-}
-
-
- /*MENSAJES*/
+  text-align: center;}
+/*MENSAJES*/
     .container-mensajes {display: none;}
     .container-mensajes-web {
        display: inline-block;
+       clear: both;
        width: 22%;
        float: right;
        margin-right: 5%;
-       font-family:'Nunito Sans', sans-serif;
-       margin-top: 14px;
-      }
+       margin-top: 14px;}
     .titulo-mensajes { padding-bottom: 0%;}
     .titulo-mensajes p {
       font-size: 1.2rem;
-      margin-left: 15%;
-    }
-    .titulo-mensajes img {
-      width: 12%;
-    }
-    .mensaje-texto {
-     padding-right:2%;
-    }
-    .mensaje-texto p {
-      font-size: 0.9rem;
-    }
-    .mensaje-info {
-      margin-top: 8px;
-    }
-
-  /*LLEVAR*/
+      margin-left: 15%;}
+    .titulo-mensajes img {width: 12%;}
+    .mensaje-texto {padding-right:2%;}
+    .mensaje-texto p {font-size: 0.9rem;}
+    .mensaje-info {margin-top: 8px;}
+   /*LLEVAR*/
     form.llevar{
         margin-bottom: 40px;
         float: left;
@@ -1852,8 +1549,7 @@ footer div ul {
     .formulario-llevar label {font-size: 1.5rem;}
     .formulario-llevar input {
       padding-left: 15%;
-      font-size: 0.8em;
-    }
+      font-size: 0.8em;}
     .formulario-llevar img {width: 15px;}
     .formulario-llevar .origen{
         float: left;
@@ -1886,22 +1582,17 @@ footer div ul {
       margin-left: 36%;
       font-size: 1em;}
     .botones-llevar .b1 {
-      font-size: 1.6rem;
-    }
+      font-size: 1.6rem;}
     .botones-llevar .b2 {
       font-size: 1.6rem;
-      padding-left: 10%;
-    }
-
-    /*BUSCAR-WEB*/
-     form.buscar-web{
-  /*display: none;*/
+      padding-left: 10%;}
+  /*BUSCAR-WEB*/
+  form.buscar-web{
   width: 100%;
   margin: 0 auto;
   background-color: white;
   margin-bottom: 10px;
-  overflow: hidden;
-  }
+  overflow: hidden;}
   .buscar-web input {
   padding: 5px;
   border-style: solid;
@@ -1913,7 +1604,6 @@ footer div ul {
   width: 100%;}
   .formulario-buscar-web button{
    width: 7%;
-   font-family: 'Nunito Sans', sans-serif;
    font-weight: bold;
    font-size: 0.8em;
    color: white;
@@ -1934,10 +1624,8 @@ footer div ul {
    z-index: 22;
    margin-top: 4px;
    margin-left: 10px;}
-
   .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
-
-    form.buscar-web{display: inline-block;}
+  form.buscar-web{display: inline-block;}
     .buscar-web input {
       padding: 5px;
       border-width: 1.5px;
@@ -1964,16 +1652,12 @@ footer div ul {
       width: 12px;
       margin-top: 4.5px;
       margin-left: 8px;}
-
-      /* PERFIL WEB*/
+    /* PERFIL WEB*/
       form.completar-perfil-web {
         display: inline-block;
-        width: 22%;
-
-      }
-      /*COMPLETAR PERFIL*/
-
-      form.completar-perfil{
+        width: 22%;}
+    /*COMPLETAR PERFIL*/
+    form.completar-perfil{
           width: 40%;
           margin-left: 3%;
           margin-top: 120px;
@@ -1990,7 +1674,6 @@ footer div ul {
       border-radius: 50px;
       margin-bottom: 45px;}
       .formulario-perfil button{margin-left:32%;}
-
     /*CCAMBIAR CUENTA*/
       form.editar-cuenta{
           width: 40%;
@@ -2001,11 +1684,9 @@ footer div ul {
        .formulario-cuenta {margin-top: 18px;}
        .formulario-cuenta button {margin-left: 29%; margin-top: 0;}
        .h2-cuenta{padding-top: 0;}
-
-    /*MENU FOOTER MOBILE*/
+   /*MENU FOOTER MOBILE*/
     .contenedor-menu-footer-mobile {display: none;}
-
-    /*FOOTER*/
+   /*FOOTER*/
     footer .contacto div {font-size: 14px;}
     footer .contacto .titulo {
         font-size: 40px;
@@ -2014,51 +1695,42 @@ footer div ul {
     footer .logo-footer img {top: 55%;}
     footer .sn-footer ul li img {height: 38px;}
     footer .sn-footer ul {left: 5%;}
-
-
-    /*FOOTER INTERIOR WEB*/
+  /*FOOTER INTERIOR WEB*/
     .container-footer-interior {
       display: inline-block;
       width: 100%;
       margin-right: 5%;
       float: right;
-      margin-top: 14px;
-    }
+      margin-top: 14px;}
     .footer-interior {
       width: 22%;
       float: right;
-      background-color: white;
-      font-family:'Nunito Sans', sans-serif;
-      color: grey;
+      background-color: black;
+      color: white;
       padding-left:2%;
       padding-right: 2%;
-      font-size: 0.8rem;
-    }
+      font-size: 1rem;
+      margin-bottom: 50px;}
     .container-footer-interior img { width: 5%; margin-right: 2%;}
     .container-footer-interior a {
-      text-decoration: none;
-      color: grey;
-    }
+      text-decoratio©n: none;
+      color: #00f07f;
+      padding-right: 4%;}
     .container-footer-interior p{margin:0;}
     .menu-links {
     line-height: 22px;
-    padding-top: 10px;
-    }
+    padding-top: 10px;}
     .container-footer-interior .publicidad {
       border-top: 1px solid grey;
       margin-top: 6px;
-      padding-bottom: 10px;}
+      padding-bottom: 10px;
+      padding-top: 6px;}
     .container-footer-interior .publicidad a {color:#00f07f; font-weight: bold;}
   }
 
-
-
 @media (min-width: 1200px) {
-
-    /*HEADER*/
-    .logo {
-        margin-top: 0.5%;
-        margin-bottom: 2%;}
+/*HEADER*/
+    .logo {margin-top: 0.5%;}
     .topnav {
         display: inline-block;
         position: relative;
@@ -2066,21 +1738,17 @@ footer div ul {
         margin-top: 43px;}
     .topnav a {
         color: #f2f2f2;
-        font-family: 'Open Sans', sans-serif;
         text-align: center;
         padding: 15px 10px;
         text-decoration: none;
         font-size: 21px;}
     .headercontainer {
-        height: 100px;
         position: fixed;}
     .header_main {
         position: relative;
-        height: 100%;
         display: block;
         background-color: rgb(70, 71, 73);}
-
-    /*INICIO*/
+  /*INICIO*/
    #inicio {margin-top: 150px;}
     .inicio1 {
         width: 49%;
@@ -2102,46 +1770,35 @@ footer div ul {
     .texto-sobreImagen p {font-size: 1.8rem;}
     .texto-sobreImagen button {
       font-size: 1.5rem;
-      margin-top: 110px;
-    }
+      margin-top: 110px;}
     /*FAQS*/
     .preg-container h2 {font-size: 28px;}
     .preg-container p {font-size: 18px;}
-
-    /*AYUDA*/
+   /*AYUDA*/
     .h1-ayuda {font-size: 3.4rem;}
     .h1-ayuda {font-size: 3.2rem;}
-       /*LOG IN*/
-
-.form-login {
+   /*LOG IN*/
+   .form-login {
     width: 26.65%;
     text-align: center;
     float: right;
     background-color: #808080;
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
     margin-top: 100px;
     position: absolute;
     z-index: 6;
     right: 0;}
-
-    /*WEB PERFIL*/
-    .web-foto-perfil {
-      width: 28%;
-    }
-    .web-info-perfil {
-      font-size: 1rem;
-    }
-
-    /*FEED*/
+   /*WEB PERFIL*/
+    .web-foto-perfil {width: 28%;}
+    .web-info-perfil {font-size: 1rem;}
+   /*FEED*/
     .info-Feed-misViajes .usuario {font-size: 1.2rem;}
     .info-Feed-misViajes .dia { font-size: 1.7rem;}
     .info-Feed-misViajes .origen p {font-size: 1.5rem;}
     .info-Feed-misViajes .destino p {font-size: 1.5rem;}
     .info-Feed-misViajes .espacio-disponible {font-size: 1rem;}
     .info-Feed-misViajes .precio {font-size: 1rem;}
-
-    /*MIS VIAJES*/
+   /*MIS VIAJES*/
     .titulo-misViajes p {font-size: 1.3rem;}
     .titulo-misViajes img { padding-top: 2%;}
     .fecha-hora-misViajes .dia {font-size: 1.4rem;}
@@ -2149,9 +1806,7 @@ footer div ul {
     .fecha-hora-misViajes .destino p {font-size: 1.2rem;}
     .fecha-hora-misViajes .destino img {margin-top: 0;}
     .posteo-misViajes .adicionales-misViajes img {margin-top: 2px;}
-
-    /*LLEVAR*/
-
+  /*LLEVAR*/
     input#destino.form-posteo{width: 235px;}
     input#origen.form-posteo{width: 235px;}
     input#horario.form-posteo{width: 235px;}
@@ -2163,22 +1818,14 @@ footer div ul {
     .formulario-llevar .destino{margin-left: 0%;}
     .formulario-llevar .fecha{margin-left: 0%;}
     .formulario-llevar .precio{margin-left: 0%;}
-
-    /*CAMBIAR CUENTA*/
+   /*CAMBIAR CUENTA*/
     .formulario-cuenta button {margin-left: 33%;}
-
-    /*MENSAJES*/
-    .titulo-mensajes img {
-      width: 10%;
-    }
-    .mensaje-texto p {
-      font-size: 1rem;
-    }
-
-    /*MENU FOOTER MOBILE*/
+   /*MENSAJES*/
+    .titulo-mensajes img {width: 10%;}
+    .mensaje-texto p {font-size: 1rem;}
+   /*MENU FOOTER MOBILE*/
     .contenedor-menu-footer-mobile {display: none;}
-
-    /*FOOTER*/
+   /*FOOTER*/
     footer .logo-footer img {
         top: 47%;}
     footer .sn-footer ul li img {

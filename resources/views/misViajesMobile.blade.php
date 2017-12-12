@@ -19,12 +19,15 @@
 
          <div class="fecha-hora-misViajes">
              <p class="dia">JUEVES 29 SEPT.// 10:30</p>
+
+             <div class="misviajes-icono">
+                 <img src="imagenes/posteo-icono.png" alt="">
+             </div>
+
              <div class="origen">
-                <img src="imagenes/origen.png" alt="">
                 <p>Villa Crespo, Malabia 2435</p>
             </div>
              <div class="destino">
-                <img src="imagenes/destino.png" alt="">
                 <p>Villa del Parque, Av. Triunbirato 6780</p>
             </div>
          </div>
@@ -38,9 +41,7 @@
 
      <div class="opciones-Feed-misViajes">
         <img class="img1" src="imagenes/cancelarviaje.png" alt="">
-        <img class="img2" src="imagenes/modeloauto.png" alt="">
         <img class="img3" src="imagenes/mensajes.png" alt="">
-        <img class="img4" src="imagenes/basurablanca.png" alt="">
      </div>
 
  </article>
@@ -58,12 +59,15 @@
 
        <div class="fecha-hora-misViajes">
         <p class="dia">MIERCOLES 19 SEPT.// 22:30</p>
+
+        <div class="misviajes-icono">
+            <img src="imagenes/posteo-icono.png" alt="">
+        </div>
+        
           <div class="origen">
-            <img src="imagenes/origen.png" alt="">
             <p>Devoto, Bulnes 435</p>
           </div>
           <div class="destino">
-              <img src="imagenes/destino.png" alt="">
               <p>Lanus, Av Rivadavia 8094</p>
           </div>
        </div>
@@ -77,8 +81,6 @@
 
    <div class="opciones-Feed-misViajes">
           <img class="img1" src="imagenes/tickVerde.png" alt="">
-          <img class="img2" src="imagenes/modeloauto.png" alt="">
-          <img class="img3" src="imagenes/mensajes.png" alt="">
           <img class="img4" src="imagenes/basurablanca.png" alt="">
   </div>
 

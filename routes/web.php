@@ -45,6 +45,14 @@ Route::get('/llevar', function () {
     return view('llevar');
 });
 
+Route::get('/cuenta', function () {
+    return view('cuenta');
+});
+
+Route::get('/test', function () {
+    return 'test';
+});
+
 
 
 

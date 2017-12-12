@@ -57,8 +57,6 @@
       <article class="posteo">
         <div class="fotoperfil">
           <img class="foto1"src="imagenes/foto-perfil.jpg" alt="">
-          <img class="foto2"src="imagenes/animalprohibido.png" alt="">
-          <img class="foto3"src="imagenes/fumar.png" alt="">
         </div>
 
       <div class="info-Feed-misViajes">
@@ -85,7 +83,6 @@
 
         <div class="opciones-Feed-misViajes">
           <img class="img1" src="imagenes/llevameposteoblanco.png" alt="">
-          <img class="img2" src="imagenes/modeloauto.png" alt="">
           <img class="img3" src="imagenes/mensajes.png" alt="">
         </div>
       </article>

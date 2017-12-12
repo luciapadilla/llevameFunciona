@@ -20,6 +20,10 @@
          <div id="circulo-perfil-foto"><input style="color: grey" type="text" name="foto-usuario" id="subir-foto-usuario" accept="image/png, image/jpeg" onfocus="(this.type='file')" onblur="if(!this.value)this.type='text" placeholder="Subir foto"></div>
          </div>
 
+         <div class="boton-editar">
+           <button type="button" id="boton-editar-perfil" name="button">Editar perfil</button>
+           <a href="{{ url('/cuenta') }}"><img  id="imagen-editar-cuenta" src="imagenes/configuracion-cuenta.png" alt=""></a>
+         </div>
 
          <h1 class="h1-perfil" id="informacion-personal">Información personal</h1>
 

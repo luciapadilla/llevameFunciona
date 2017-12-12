@@ -131,6 +131,11 @@
 			<img class="mobile2" src="imagenes/inicioimagen2.jpg" alt="">
 		  <button class="boton-llevar" type="button" name="LLEVAR">LLEVAR</button>
 		</div>
+
+    <div class="inicio-flecha">
+   		<img class="flecha" src="imagenes/scrollicono.png" alt="">
+  		</div>
+      
 	</div>
   <!--
 	<div id= "quienes" class="contenedor-quienes">
@@ -161,7 +166,7 @@
 {{-- <section id= "quienes" class="contenedor-quienes">
   <article class="titulo-quienes">
     <h2>¿TE LLEVO?</h2>
-    <img src="imagenes/logotodoblanco.png"> 
+    <img src="imagenes/logotodoblanco.png">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.

@@ -10,7 +10,7 @@
       <div class="llevame-blanco" >
 
         <div class="llevame-botones">
-           <a  type="button" class="b1" id="llevameButton">LLÉVAME</a>
+           <a  type="button" class="b1" id="llevameButton">LLEVAME</a>
            <a  type="button" class="b2" id="llevarButton">LLEVAR</a>
        </div>
 
@@ -59,8 +59,6 @@
       <article class="posteo llevame-section">
         <div class="fotoperfil">
           <img class="foto1"src="imagenes/foto-perfil.jpg" alt="">
-          <img class="foto2"src="imagenes/animalprohibido.png" alt="">
-          <img class="foto3"src="imagenes/fumar.png" alt="">
         </div>
 
       <div class="info-Feed-misViajes">
@@ -69,12 +67,13 @@
           </div>
         <div class="fecha-hora">
             <p class="dia">MARTES 30 SEPT.// 22:40</p>
+            <div class="posteo-icono">
+                <img src="imagenes/posteo-icono.png" alt="">
+            </div>
               <div class="origen">
-                <img src="imagenes/origen.png" alt="">
                 <p>Centro Av. 9 De Julio 534</p>
               </div>
               <div class="destino">
-                <img src="imagenes/destino.png" alt="">
                 <p>DOT Shopping</p>
               </div>
         </div>
@@ -87,7 +86,6 @@
 
         <div class="opciones-Feed-misViajes">
           <img class="img1" src="imagenes/llevameposteoblanco.png" alt="">
-          <img class="img2" src="imagenes/modeloauto.png" alt="">
           <img class="img3" src="imagenes/mensajes.png" alt="">
         </div>
       </article>
@@ -151,14 +149,6 @@
          </form>
 {{-- TERMINA form LLEVAR --}}
     </div>
-
-    
-  
-         
-
- 
-
-
         <div class="container-misViajes">
     <div class="form-misViajes">
 
@@ -178,12 +168,13 @@
 
         <div class="fecha-hora-misViajes">
             <p class="dia">JUEVES 29 SEPT.// 10:30</p>
+            <div class="misviajes-icono">
+                <img src="imagenes/posteo-icono.png" alt="">
+            </div>
                 <div class="origen">
-                    <img src="imagenes/origen.png" alt="">
                     <p>Villa Crespo, Malabia 2435</p>
                 </div>
                 <div class="destino">
-                    <img src="imagenes/destino.png" alt="">
                     <p>Villa del Parque, Av. Triunbirato 6780</p>
                 </div>
         </div>
@@ -197,9 +188,7 @@
 
          <div class="opciones-Feed-misViajes">
                 <img class="img1" src="imagenes/cancelarviaje.png" alt="">
-                <img class="img2" src="imagenes/modeloauto.png" alt="">
                 <img class="img3" src="imagenes/mensajes.png" alt="">
-                <img class="img4" src="imagenes/basurablanca.png" alt="">
           </div>
 
       </article>
@@ -217,12 +206,13 @@
 
              <div class="fecha-hora-misViajes">
               <p class="dia">MIERCOLES 19 SEPT.// 22:30</p>
+              <div class="misviajes-icono">
+                  <img src="imagenes/posteo-icono.png" alt="">
+              </div>
                 <div class="origen">
-                  <img src="imagenes/origen.png" alt="">
                   <p>Devoto, Bulnes 435</p>
                 </div>
                 <div class="destino">
-                    <img src="imagenes/destino.png" alt="">
                     <p>Lanus, Av Rivadavia 8094</p>
                 </div>
              </div>
@@ -236,8 +226,6 @@
 
          <div class="opciones-Feed-misViajes">
                 <img class="img1" src="imagenes/tickVerde.png" alt="">
-                <img class="img2" src="imagenes/modeloauto.png" alt="">
-                <img class="img3" src="imagenes/mensajes.png" alt="">
                 <img class="img4" src="imagenes/basurablanca.png" alt="">
         </div>
 
@@ -273,7 +261,8 @@
       </div>
 
     </div>
- <div class="container-footer-interior">
+
+<div class="container-footer-interior">
        <div class="footer-interior">
          <article class="menu-links">
            <ul>
@@ -284,6 +273,7 @@
              <a href="ayuda.php">Ayuda</a>
              <a href="#">Facebook</a>
              <a href="#">Instagram</a>
+             <a href="#">Desarrolladores</a>
              <a href="#">Contacto</a>
            </ul>
          </article>
