@@ -6,51 +6,47 @@
     <h1 class="h1-login">Iniciar sesión en Llevame</h1>
 		<form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+             <div class="col-md-6">
+             <input style="color: white" id="email" type="email" class="input" name="email" placeholder="Email" value="{{ old('email') }}" required autofocus>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="input" name="email" value="{{ old('email') }}" required autofocus>
+                @if ($errors->has('email'))
+                  <span class="help-block">
+                      <strong>{{ $errors->first('email') }}</strong>
+                  </span>
+               @endif
+              </div>
+       </div>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+      <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+        <div class="col-md-6">
+          <input style="color: white" id="password" type="password" class="input" name="password" placeholder="Contraseña" required>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                @if ($errors->has('password'))
+                  <span class="help-block">
+                  <strong>{{ $errors->first('password') }}</strong>
+                  </span>
+                @endif
+         </div>
+        </div>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="input" name="password" required>
+        <div class="form-group">
+          <div class="col-md-6 col-md-offset-4">
+              <div class="checkbox">
+                <label>
+                 <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                </label>
+              </div>
+          </div>
+       </div>
 
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="boton-ingresar">
-                                    Login
-                                </button>
-                            </div>
-                        </div>
+        <div class="form-group">
+        <div class="col-md-8 col-md-offset-4">
+            <button type="submit" class="boton-ingresar">
+                        Ingresar
+            </button>
+          </div>
+          </div>
             </form>
             <p class="link-crearcuenta" id="crear_cuenta">Crear cuenta</p>
 
@@ -79,7 +75,7 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" placeholder="E-Mail" type="email" class="input-cuenta" name="email" value="{{ old('email') }}" required>
+                                <input id="email" placeholder="Email" type="email" class="input-cuenta" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -135,49 +131,8 @@
     <div class="inicio-flecha">
    		<img class="flecha" src="imagenes/scrollicono.png" alt="">
   		</div>
-      
+
 	</div>
-  <!--
-	<div id= "quienes" class="contenedor-quienes">
-    <section class="titulo-quienes">
-      <article>
-        <h2>¿TE LLEVO?</h2>
-				<img src="imagenes/logotodoblanco.png">
-      <article>
-    </section>
-
-    <div class="texto-quienes">
- 		    <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
-         </p>
-       </article>
-    </div>
-    <div class="imagen-quienes">
-    <article>
-     <img src="imagenes/quienessomos.jpg">
-    <button type="button" name="INGRESAR">INGRESAR</button>
-    </article>
-  </div>
-</div>-->
-
-
-{{-- <section id= "quienes" class="contenedor-quienes">
-  <article class="titulo-quienes">
-    <h2>¿TE LLEVO?</h2>
-    <img src="imagenes/logotodoblanco.png">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.
-     </p>
-  </article>
-  <article class="imagen-quienes">
-     <img src="imagenes/quienessomos.jpg">
-    <button type="button" name="INGRESAR">INGRESAR</button>
-  </article>
-</section>
- --}}
 
    <div class="container-quienes">
 
@@ -214,44 +169,32 @@
    <div class="preg1-2">
       <div class="preg-1">
       <h2 class="h2-preg">¿ES GRATIS? </h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. </p>
+      <p>El uso de la web es gratis. El pago del viaje se acuerda con el conductor. Llevame no se hace cargo de ninguna transacción de dinero, esto lo conviene el pasajero y el conductor.
+ </p>
     </div>
     <div class="preg">
       <h2 class="h2-preg">¿ME BUSCAN?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. </p>
+      <p>El conductor indica el punto de encuentro(el origen del viaje) y desde ese punto es donde se inicia el viaje.
+ </p>
     </div>
   </div>
 
   <div class="preg3-4">
     <div class="preg">
       <h2 class="h2-preg">¿Y SI NO LLEGO AL PUNTO DE ENCUENTRO?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-
+      <p>En caso de no llegar al punto de encuentro (el origen) a la hora acordada, el conductor no tiene la responsabilidad de esperar al pasajero. Pero podes enviarle un mensaje al conductor para avisarle de algún retraso o cancelación.
        </p>
     </div>
     <div class="preg">
       <h2 class="h2-preg">¿CON QUIENES VIAJO?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua</p>
+      <p>Los pasajeros con los que compartidas el viaje son parte de la comunidad de llévame. Es una oportunidad para conocer gente nueva y entablar amistades. </p>
     </div>
   </div>
 
   <div class="preg5-img">
     <div class="preg">
       <h2 class="h2-preg">¿ES SEGURO? </h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. </p>
+      <p> </p>
     </div>
     <img class="img-faqs"src="imagenes/faqs1.jpg" alt="">
   </div>
