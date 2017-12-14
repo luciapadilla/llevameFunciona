@@ -83,7 +83,6 @@
 
         <div class="opciones-Feed-misViajes">
           <img class="img1" src="imagenes/llevameposteoblanco.png" alt="">
-          <img class="img3" src="imagenes/mensajes.png" alt="">
         </div>
       </article>
     </div>

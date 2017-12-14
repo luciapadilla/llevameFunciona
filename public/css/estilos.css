@@ -28,10 +28,6 @@ h1, h2, button, p, input, a, ul, li, footer, header{font-family: 'Nunito Sans', 
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 10px;}
-.header-mensaje{
-  width: 8%;
-  margin-top: 6px;
-  margin-left: 90px;}
 .iconomenumobile {
     margin-top: 8px;
     margin-right: 8%;
@@ -275,8 +271,6 @@ p#crear_cuenta.link-crearcuenta{
   float: right;
   margin-top: 10px;
   margin-right: 10px;}
-/*PERFIL WEB*/
-form.completar-perfil-web {display: none;}
 /*FEED*/
 *{box-sizing: border-box;}
 .container-misViajes {display: none;}
@@ -482,63 +476,6 @@ form.completar-perfil-web {display: none;}
 #adicional-status {
   color: #00f07f;
   font-weight: bold;}
-/*MENSAJES*/
- .container-mensajes-web {display: none;}
- .container-mensajes {
-   width: 100%;
-   margin: 0 auto;
-   margin-top: 58px;}
- .mensajes{
-   width: 100%;
-   float: left;
-   overflow: hidden;
-   background-color: white;
-   padding-left: 2%;
-   padding-right: 2%;
-   color: grey;
-   padding-bottom: 2%;}
- .titulo-mensajes {
-   border-bottom: 2px solid grey;}
- .titulo-mensajes img {
-   display: inline-block;
-   width: 8%;
-   float: left;}
- .titulo-mensajes p {
-   margin-top: 0px;
-   margin-bottom: 0;
-   margin-left: 13%;
-   padding-top: 4px;}
- .mensaje-info {
-   border-bottom: 1px solid grey;
-   overflow: hidden;
-   border-top: 1px solid grey;
-   margin-top: 15px;
-   padding-bottom: 10px;}
- .mensaje-foto {
-   width: 20%;
-   float: left;
-   padding-top: 10px;}
- .mensaje-foto img {
-   width: 75%;
-   float: left;
-   margin-right: 4%;
-   padding-top: 3%;
-   border-radius: 50%;}
- .mensaje-texto  {
-   width: 70%;
-   float: left;
-   padding-top: 10px;}
- .mensaje-texto p {
-  margin:0;
-  font-size: 0.7rem;
-  padding-top: 2px;}
- .mensaje-texto .usuario {font-weight: bold;}
-.mensaje-opciones {
-  width: 10%;
-  float: right;
-  background-color: grey;}
-.mensaje-opciones img {
-  width: 80%;}
   /*LLEVAR*/
    .llevar a {text-decoration: none;}
   .contenedor-llevame{
@@ -668,6 +605,7 @@ form.completar-perfil-web {display: none;}
    margin-left: 10px;}
    .origen-buscar, .destino-buscar, .horario-buscar, .fecha-buscar, .pasajeros-buscar {margin-bottom: 3%;}
   /*COMPLETAR PERFIL*/
+   .contenedor-perfil-web{display: none;}
    .contenedor-perfil{
    max-width: 100%;
    margin: 0 auto;
@@ -881,8 +819,8 @@ form.completar-perfil-web {display: none;}
    display: inline-block;
    float: left;
    margin-top: 15px;}
-   .img-menu-footer:last-child{margin-right: 20px;}
-   .img-menu-footer:first-child{margin-left: 19px;}
+   .img-menu-footer:last-child{margin-right: 27px;}
+   .img-menu-footer:first-child{margin-left: 27px;}
 /*FOOTER*/
 footer {
     background-color: rgb(27, 23, 24);
@@ -943,11 +881,6 @@ footer div ul {list-style-type: none;}
 }
 @media (min-width: 480px) {
     .iconomenumobile {margin-top: 3%;}
-/*HEADER*/
-    .header-mensaje{
-      width: 8%;
-      margin-top: 6px;
-      margin-left: 140px;}
 /*INICIO*/
     .inicio1 {} .inicio2 {} .boton-llevame {
         left: 14%;
@@ -979,6 +912,11 @@ footer div ul {list-style-type: none;}
     .info-Feed-misViajes .precio {font-size: 1rem;}
     .opciones-Feed-misViajes .img1 {width: 50%;}
     .opciones-Feed-misViajes .img3 {width: 50%;}
+    .posteo-icono img{
+      width: 79%;
+      float: left;
+      position: absolute;
+      right: 23px;}
 /*MIS VIAJES*/
     .posteo-misViajes .adicionales-misViajes img {margin-right: 1%;}
     .fecha-hora-misViajes {padding-bottom: 2%;}
@@ -997,21 +935,14 @@ footer div ul {list-style-type: none;}
     input#nombre-completado.form-completar-perfil {width: 327px;}
     input#apellido-completado.form-completar-perfil {width: 327px;}
     input#subir-foto-usuario{margin-top: 17%;}
+    .formulario-perfil button{margin-left: 175px;}
+    .formulario-perfil img {width: 6%;}
 /*CAMBIAR CUENTA*/
     .formulario-cuenta button {margin-left: 8%;}
     .formulario-cuenta {margin-top: 84px;}
 /*MENU MOBILE FOOTER*/
-  .img-menu-footer:first-child {margin-left: 33px;}
-  .img-menu-footer:last-child {margin-right: 33px;}
-/*MENSAJES*/
-   .titulo-mensajes {padding-bottom: 5px;}
-   .titulo-mensajes p {
-     font-size: 1.4rem;
-     margin-left: 10%;
-     padding-top: 4px;}
-   .titulo-mensajes img {width: 8%;}
-   .mensaje-texto p {font-size: 1rem;}
-   .mensaje-texto img {margin-left: 4%;}
+  .img-menu-footer:first-child {margin-left: 47px;}
+  .img-menu-footer:last-child {margin-right: 47px;}
 }
 @media (min-width: 768px) {
     /*HEADER*/
@@ -1019,9 +950,6 @@ footer div ul {list-style-type: none;}
     .logo {
         width: 23%;
         margin-top: 2%;}
-    .header-mensaje{
-      width: 5%;
-      margin-top: 15px;}
     /* The side navigation menu */
     .sidenav {display: none;}
     .topnav {
@@ -1187,6 +1115,11 @@ footer div ul {list-style-type: none;}
     .opciones-Feed-misViajes {width: 8%;}
     .opciones-Feed-misViajes .img1 {width: 48%;}
     .opciones-Feed-misViajes .img3 {width: 48%;}
+    .posteo-icono img{
+      width: 63%;
+      float: left;
+      position: absolute;
+      right: 55px;}
     /*MIS VIAJES*/
     .titulo-misViajes p {font-size: 1.8rem;}
     .opciones-Feed-misViajes .img4 {width: 48%;}
@@ -1290,13 +1223,9 @@ footer div ul {list-style-type: none;}
     .formulario-perfil button{margin-left:40%;}
     /*CAMBIAR CUENTA*/
     .formulario-cuenta button{margin-left:25%;}
-    /*MENSAJES*/
-    .titulo-mensajes img {width: 6%;}
-    .titulo-mensajes p{font-size: 1.8rem;}
-    .mensaje-texto p {font-size: 1.5rem;}
     /*MENU MOBILE FOOTER*/
-    .img-menu-footer:first-child {margin-left: 60px;}
-    .img-menu-footer:last-child {margin-right: 60px;}
+    .img-menu-footer:first-child {margin-left: 80px;}
+    .img-menu-footer:last-child {margin-right: 80px;}
    /*FOOTER*/
     footer {
         background-color: rgb(27, 23, 24);
@@ -1361,7 +1290,6 @@ footer div ul {list-style-type: none;}
         width: 25%;
         margin-top: 12px;
         margin-left: 3%;}
-    .header-mensaje{display: none;}
     /* The side navigation menu */
     .sidenav {display: none;}
     .topnav {
@@ -1456,6 +1384,11 @@ footer div ul {list-style-type: none;}
     .info-Feed-misViajes .espacio-disponible {font-size: 0.9rem;}
     .info-Feed-misViajes .precio {font-size: 0.9rem;}
     .posteo .adicionales img {width: 6%;}
+    .posteo-icono img {
+     width: 98%;
+     float: left;
+     position: absolute;
+     right: 11px;}
    /*MIS VIAJES*/
      .container-misViajes {
       display: inline-block;
@@ -1477,33 +1410,6 @@ footer div ul {list-style-type: none;}
      .opciones-Feed-misViajes .img1 {width: 70%;}
      .opciones-Feed-misViajes .img3 {width: 70%;}
      .opciones-Feed-misViajes .img4 {width: 70%;}
-.PRUEBA {
-  display: inline-block;
-  width: 22%;
-  float: left;
-  margin-left: 5%;
-  margin-top: 120px;
-  border: 1px solid red;}
-.PRUEBA h1 {
-  font-size: 2rem;
-  text-align: center;}
-/*MENSAJES*/
-    .container-mensajes {display: none;}
-    .container-mensajes-web {
-       display: inline-block;
-       clear: both;
-       width: 22%;
-       float: right;
-       margin-right: 5%;
-       margin-top: 14px;}
-    .titulo-mensajes { padding-bottom: 0%;}
-    .titulo-mensajes p {
-      font-size: 1.2rem;
-      margin-left: 15%;}
-    .titulo-mensajes img {width: 12%;}
-    .mensaje-texto {padding-right:2%;}
-    .mensaje-texto p {font-size: 0.9rem;}
-    .mensaje-info {margin-top: 8px;}
    /*LLEVAR*/
     form.llevar{
         margin-bottom: 40px;
@@ -1616,28 +1522,73 @@ footer div ul {list-style-type: none;}
       margin-top: 4.5px;
       margin-left: 8px;}
     /* PERFIL WEB*/
-      form.completar-perfil-web {
-        display: inline-block;
-        width: 22%;}
-    /*COMPLETAR PERFIL*/
-    form.completar-perfil{
-          width: 40%;
-          margin-left: 3%;
-          margin-top: 120px;
-          margin-bottom: 40px;
-          float: left;}
-      input#nombre-completado.form-completar-perfil {width: 235px; margin-left: 123px;}
-      input#apellido-completado.form-completar-perfil {width: 235px; margin-left: 123px;}
-      input#subir-foto-usuario{margin-top: 11%;margin-left: 2%;}
-      form.completar-perfil{margin-top: 80px;}
-      #circulo-perfil-foto {
+    form.completar-perfil-web{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: black;
+    margin-bottom: 40px;
+    display: inline-block;}
+    .contenedor-perfil-web{
+      display: inline-block;
+      position: relative;
+      width: 22%;
+      float: left;
+      margin-left: 5%;
+      margin-top: 61px;}
+      .h1-perfil {margin-top: 15px;}
+      .h2-perfil {
+      margin-top: 8px;
+      padding: 0;}
+      #circulo-perfil-foto-web {
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 25px;
+        border-radius: 40px;
+        background: grey;
+        margin-bottom: 45px;}
+      input#nombre-completado-web.form-completar-perfil {
       width: 100px;
-      height: 100px;
-      margin-left: 5px;
-      border-radius: 50px;
-      margin-bottom: 45px;}
-      .formulario-perfil button{margin-left:32%;}
-    /*CCAMBIAR CUENTA*/
+      float: right;
+      margin-top: 12px;}
+      input#apellido-completado-web.form-completar-perfil {
+      width: 100px;
+      float: right;
+      clear: both;}
+      input#subir-foto-usuario {
+      margin-top: 80px;
+      margin-left: 10px;}
+      button#boton-editar-perfil {
+      font-size: 0.65em;
+      margin-bottom: 15px;
+      position: absolute;
+      padding: 4px 5px;}
+      img#imagen-editar-cuenta {
+      width: 27px;
+      position: absolute;
+      margin-bottom: 15px;
+      left: 65px;}
+      .completar-perfil-web input {
+      padding: 1px;
+      border-style: none;
+      border-bottom-color: grey;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      background-color: black;
+      font-size: 0.7em;
+      position: relative;
+      width: 87%;}
+      .formulario-perfil img{
+      width: 8%;
+      margin-left: 3px;}
+      .formulario-perfil button {
+      margin-left: 24%;
+      margin-top: 10px;
+      margin-bottom: 10px;}
+
+    /*CAMBIAR CUENTA*/
       form.editar-cuenta{
           width: 40%;
           margin-left: 3%;
@@ -1668,7 +1619,7 @@ footer div ul {list-style-type: none;}
     .footer-interior {
       width: 22%;
       float: right;
-      background-color: black;
+      background-color: rgb(70, 71, 73);
       color: white;
       padding-left:2%;
       padding-right: 2%;
@@ -1772,9 +1723,6 @@ footer div ul {list-style-type: none;}
     .formulario-llevar .precio{margin-left: 0%;}
    /*CAMBIAR CUENTA*/
     .formulario-cuenta button {margin-left: 33%;}
-   /*MENSAJES*/
-    .titulo-mensajes img {width: 10%;}
-    .mensaje-texto p {font-size: 1rem;}
    /*MENU FOOTER MOBILE*/
     .contenedor-menu-footer-mobile {display: none;}
    /*FOOTER*/
